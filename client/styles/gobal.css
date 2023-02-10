@@ -1,0 +1,6 @@
+.btn{
+	padding: 0.3rem;
+	transition: 0.25s ease-in-out;
+	border: 1px solid #343a40;
+	border-radius: 0.3rem;
+}
