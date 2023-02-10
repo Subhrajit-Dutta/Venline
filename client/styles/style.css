@@ -13,6 +13,9 @@ nav{
 	text-align: center;
 	padding: 1.5rem;
 	box-shadow: 0px 0px 5px 8px whitesmoke;
+	position: fixed;
+	top: 0px;
+	width: 97%;
 }
 
 nav > div{
@@ -31,7 +34,7 @@ nav > div{
 	width: 5rem;
 }
 
-#navigation a{
+.nav-link{
 	color: black;
 	text-decoration: none;
 	transition: 0.25s ease-in-out;
@@ -39,8 +42,9 @@ nav > div{
     font-weight: 500
 }
 
-#navigation a:hover{
+.nav-link:hover{
     color: red;
+    border-bottom: 1px solid black;
 }
 
 #navigation .btn{
@@ -49,5 +53,5 @@ nav > div{
 }
 
 .navicon{
-	width: 4rem !important;
+	width: 3.5rem !important;
 }
