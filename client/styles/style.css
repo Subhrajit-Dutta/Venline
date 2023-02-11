@@ -281,6 +281,18 @@ section{
 	color: white;
 }
 
+@media screen and (max-width: 720px){
+	#provide h1{
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 950px){
+	.provide-card:nth-child(2){
+	    margin-top: 2rem;
+    }
+}
+
 /*wave*/
 
 #wave{
@@ -321,6 +333,10 @@ section{
 	display: inline-block;
 	vertical-align: top;
 	color: white;
+}
+
+#about-body{
+	text-align: center;
 }
 
 #about-img{
