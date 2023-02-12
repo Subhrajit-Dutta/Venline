@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const consumerschema= mongoose.Schema({
+const consumerschema = mongoose.Schema({
     username:{
         type:String,
         required:true
@@ -27,5 +27,5 @@ const consumerschema= mongoose.Schema({
     {
         timestamps:true
     })
-    const  User= mongoose.model("User",consumerschema)
-    module.exports=User
+    const  User = mongoose.model("User",consumerschema)
+    module.exports = User

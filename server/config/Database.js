@@ -13,4 +13,4 @@ catch (error) {
     process.exit();
 }
 };
-module.exports=connectDb;
+module.exports = connectDb;
