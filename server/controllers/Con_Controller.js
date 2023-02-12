@@ -33,5 +33,5 @@ const registerUser=asyncHandler( async (req,res)=>{
         throw new Error("Failed to register")
     }
     })
-    module.exports= {registerUser}
-    exports.registerUser=registerUser
+    module.exports = {registerUser}
+    exports.registerUser = registerUser

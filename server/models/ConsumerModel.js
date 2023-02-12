@@ -1,4 +1,4 @@
-const mongoose= require('mongoose')
+const mongoose = require('mongoose')
 const consumerschema= mongoose.Schema({
     username:{
         type:String,
