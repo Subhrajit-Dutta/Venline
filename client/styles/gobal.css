@@ -10,6 +10,10 @@
 	box-shadow: 0px 0px 5px 6px whitesmoke;
 }
 
+input:focus{
+	outline: none;
+}
+
 i{
 	color: black;
 }
