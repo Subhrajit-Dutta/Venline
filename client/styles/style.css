@@ -224,6 +224,7 @@ section{
 	flex-wrap: wrap;
 	height: auto;
 	padding: 3rem;
+	padding-top: 1.5rem;
 }
 
 .category{
@@ -255,25 +256,58 @@ section{
 	height: auto;
 }
 
+#location{
+	display: inline-block;
+	position: absolute;
+	left: 2rem;
+}
+
+#search-side{
+	width: 70%;
+}
+
 #search-bar{
 	margin-top: 2rem;
 	margin-bottom: 1.5rem;
 	box-shadow: 0px 2px 8px 0px #c7c7c7;
 	padding: 0.5rem;
-	width: 26rem;
+	width: 50%;
+	color: #696969;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	gap: 1rem;
+	position: relative;
 }
 
 #search-bar input{
-	width: 20rem;
+	width: 65%;
 	height: 1rem;
 	border: none;
-    font-size: 1.4rem;
+    font-size: 1rem;
     border-radius: 0.8rem;
-    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 #search-bar i{
-	font-size: 1rem;
+	font-size: 1.15rem;
+	color: #696969 !important;
+}
+
+#location i{
+	position: absolute;
+	left: -1.5rem;
+	color: red !important;
+}
+
+#search-divider{
+	position: relative;
+	right: 10px;
+	font-size: 1.5rem;
+	
 }
 
 /*filter*/
@@ -281,17 +315,20 @@ section{
 #filter{
 	display: flex;
 	margin-bottom: 3rem;
-	width: 60%;
+	width: 50%;
 	gap: 1.5rem;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 }
 
 .filter-box{
 	height: 1.75rem;
+	color: #696969;
+	text-align: center;
 	width: 5rem;
 	border-radius: 0.5rem;
 	border: 1px solid #a9a3a3;
+	padding-top: 0.25rem;
 }
 
 /*cards*/
@@ -301,7 +338,7 @@ section{
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 82%;
-	gap: 3rem;
+	gap: 2rem;
 }
 
 .card{
@@ -310,8 +347,11 @@ section{
 	border-radius: 1rem;
 	position: relative;
 	background-color: white;
-	border: 5px white solid;
+	border: 7.5px white solid;
 	z-index: 99;
+}
+
+.card:hover{
 	box-shadow: 0px 2px 8px 0px #c7c7c7;
 }
 
