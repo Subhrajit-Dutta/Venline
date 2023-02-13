@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="styles/gobal.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 	<script src="https://kit.fontawesome.com/9b7f16bc1d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -43,14 +46,13 @@
             <h1>Get Food At Your Door Step At Lowest Price!</h1>
             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod bhaiya mere mu se nikal gaii
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni mai mer hi jayoon ga</h3>
-            <button onclick="location.href='#search-heading'">Search Items</button>
+            <button onclick="location.href='#search'">Search Items</button>
         </div>
         <div id="header-img">
             <img src="images/header-img.png" height="300px" width="300px">
         </div>
     </section>
     
-    <h1 id="category-heading">Products You May Like</h1>
     <section id="categories">
         <div class="category"><img src="images/fish.png" alt="" height="140px" width="140px"><p>Fishes</p></div>
         <div class="category"><img src="images/fruit.png" alt="" height="140px" width="140px"><p>Fruits</p></div>
@@ -61,8 +63,45 @@
     </section>
 
     <section id="search">
-        <h1 id="search-heading">Search Items</h1>
-        <div id="search-bar"><i class="fa-solid fa-magnifying-glass"></i><input type="text"></div>
+        <div id="search-bar">
+            <div id="location">
+                <i class="fa-solid fa-location-dot"></i>Kolkata
+            </div>
+                <div id="search-side">
+                    <span id="search-divider">|</span>
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                     <input type="text" placeholder="Search for food items">
+                 </div>
+             </div>
+        <div id="filter">
+            <div class="filter-box">Filter</div>
+            <div class="filter-box">Ratings</div>
+            <div class="filter-box">Category</div>
+            <div class="filter-box">Prize</div>
+        </div>
+        <div id="cards">
+            <div class="card">
+                <img src="images/apple.png">
+                <div class="name">Example Name</div>
+                <div class="description"><p>Lorem ipsumid est laborum.</p></div>
+                <div class="rating">5.0 <i class="fa-solid fa-star"></i></div>
+                <div class="prize">Rs. 50 / KG</div>
+            </div>
+            <div class="card">
+                <img src="images/tomato2.png">
+                <div class="name">Example Name</div>
+                <div class="description"><p>Lorem ipsumid est laborum.</p></div>
+                <div class="rating">5.0 <i class="fa-solid fa-star"></i></div>
+                <div class="prize">Rs. 50 / KG</div>
+            </div>
+            <div class="card">
+                <img src="images/broccoli.png">
+                <div class="name">Example Name</div>
+                <div class="description"><p>Lorem ipsumid est laborum.</p></div>
+                <div class="rating">5.0 <i class="fa-solid fa-star"></i></div>
+                <div class="prize">Rs. 50 / KG</div>
+            </div>
+        </div>    
     </section>
 
     <section id="provide">
