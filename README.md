@@ -1,4 +1,5 @@
 # Sharkfolio
+A platform dedicated to empower local vendors by helping them sell their products online.
 
 ## Usage
 ```
