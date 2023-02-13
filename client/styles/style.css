@@ -16,20 +16,67 @@ main{
 /*Background Animation*/
 
 @keyframes move{
+	6.25%{
+		transform: translatey(2.5px);
+	}
+
+	12.5%{
+        transform: translatey(5px);
+	}
+
+	18.75%{
+		transform: translatey(7.5px);
+	}
+
 	25%{
-		transform: translate(0,25px);
+		transform: translatey(10px);
+	}
+
+	31.25%{
+		transform: translatey(12.5px);
+	}
+
+	37.5%{
+        transform: translatey(15px);
+	}
+
+	43.75%{
+		transform: translatey(17.5px);
 	}
 
 	50%{
-        transform: translate(0,50px);
+		transform: translatey(20px);
+	}
+	56.25%{
+		transform: translatey(22.5px);
+	}
+
+	62.5%{
+        transform: translatey(25px);
+	}
+
+	68.75%{
+		transform: translatey(27.5px);
 	}
 
 	75%{
-		transform: translate(0px,50px);
+		transform: translatey(30px);
+	}
+
+	81.25%{
+		transform: translatey(32.5px);
+	}
+
+	87.5%{
+        transform: translatey(35px);
+	}
+
+	93.75%{
+		transform: translatey(37.5px);
 	}
 
 	100%{
-		transform: translate(0,70px);
+		transform: translatey(40px);
 	}
 }
 
@@ -42,7 +89,7 @@ main{
 .back-animation:nth-child(1){
 	top: 7.5rem;
 	border-radius: 30% 40% 88% 12%;
-	animation: move 8s alternate infinite;
+	animation: move 1s alternate infinite;
 	opacity: 0.4;
 }
 
@@ -57,9 +104,9 @@ main{
 }
 
 .back-animation:nth-child(3){
-	top: 55rem;
+	top: 38rem;
 	border-radius: 30% 40% 88% 12%;
-	animation: move 8s alternate infinite;
+	animation: move 1s alternate infinite;
 	opacity: 0.4;
 	z-index: 99;
 }
