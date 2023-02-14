@@ -1,3 +1,5 @@
+// navbar
+
 const navbar = document.getElementById('navbar');
 
 function checkscroll(){
@@ -9,6 +11,8 @@ function checkscroll(){
     }
 }
 window.addEventListener('scroll',checkscroll);
+
+// provide section color change effect
 
 const pcard = document.getElementsByClassName('provide-card');
 const icons = document.getElementsByClassName('i');
@@ -37,3 +41,17 @@ function removecolor(){
 
 pcard[1].addEventListener('mouseover',changecolor);
 pcard[1].addEventListener('mouseout',removecolor);
+
+// search location dropdown
+
+let arrow_box = document.getElementById('arrow-downBox');
+
+let arrow_down = document.getElementById('drop-icon');
+arrow_down.addEventListener('click',function(event){
+    event.stopPropagation();
+    event.preventDefault();
+    if(arrow_box.style.display == 'none')
+        arrow_box.style.display = 'block';
+    else
+        arrow_box.style.display = 'none';
+});
