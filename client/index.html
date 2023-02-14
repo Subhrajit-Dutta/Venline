@@ -25,7 +25,7 @@
     </div>
 
     <!-- Navbar -->
-    <main>
+  <main>
     <nav id="navbar">
         <div id="logo">
             <img src="images/vinline.png" height="50px" width="200px">
@@ -46,7 +46,7 @@
             <h1>Get Food At Your Door Step At Lowest Price!</h1>
             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod bhaiya mere mu se nikal gaii
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni mai mer hi jayoon ga</h3>
-            <button onclick="location.href='#search'">Search Items</button>
+            <button onclick="location.href='#categories'">Search Items</button>
         </div>
         <div id="header-img">
             <img src="images/header-img.png" height="300px" width="300px">
@@ -63,14 +63,16 @@
     </section>
 
     <section id="search">
+      <div id="search-main">  
         <div id="search-bar">
             <div id="location">
                 <i class="fa-solid fa-location-dot"></i>Kolkata
             </div>
                 <div id="search-side">
+                    <span id="drop-icon"><i class="fa-solid fa-caret-down"></i></span>
                     <span id="search-divider">|</span>
                      <i class="fa-solid fa-magnifying-glass"></i>
-                     <input type="text" placeholder="Search for food items">
+                     <input type="text" placeholder="Search for food items...">
                  </div>
              </div>
         <div id="filter">
@@ -79,6 +81,7 @@
             <div class="filter-box">Category</div>
             <div class="filter-box">Price</div>
         </div>
+      </div>  
         <div id="cards">
             <div class="card">
                 <img src="images/apple.png">
@@ -137,7 +140,7 @@
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
         </div>
     </section>
-    </main>
+  </main>
 
     <script type="text/javascript" src="javascript/main.js"></script>
 </body>
