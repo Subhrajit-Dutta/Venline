@@ -471,6 +471,15 @@ section{
 	font-weight: 900;
 	padding: 0.5rem;
 	box-sizing: border-box;
+	display: inline-block;
+}
+
+.add2cart{
+	display: inline-block;
+	padding: 0.5rem;
+	border: 1px solid black;
+	font-weight: 100;
+	margin-left: 0.5rem;
 }
 
 /*provide section*/
