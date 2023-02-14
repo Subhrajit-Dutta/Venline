@@ -96,7 +96,7 @@ label
 	color: #585C65;
 }
 
-input[type="text"]
+input[type="text"], input[type="password"], input[type="number"], input[type="email"]
 {
 	border: 1.5px solid #BEBFC0;
 	border-radius: 5px;
@@ -105,6 +105,7 @@ input[type="text"]
 	height: 44px;
 	width: 350px;
 }
+
 
 input:hover { 
     outline:none;
