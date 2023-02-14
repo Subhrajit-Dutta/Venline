@@ -1,0 +1,221 @@
+body
+{
+   background-color: red;	
+}
+
+
+
+#signup
+{
+	height: 823px;
+	text-align: center;
+	background-color: white;
+}
+
+#signup-heading
+{
+	margin-right: 550px;
+/*	margin-top: 100px;*/
+	font-family: 'Lato', sans-serif;
+	font-weight: 1000;
+	font-size: 23px;
+	color: black;
+}
+
+
+#name
+{
+	margin-top: 30px;
+}
+
+#name-label
+{
+	position: absolute;
+	margin-top: -7px;
+	margin-left: 2px;
+}
+
+#adhar
+{
+	margin-left: 60px;
+	margin-top: 30px;
+}
+
+#adhar-label
+{
+	position: absolute;
+	margin-top: -7px;
+	margin-left: 62px;
+}
+
+
+#phn
+{
+	margin-top: 37px;
+}
+
+#phn-label
+{
+	position: absolute;
+	margin-top: px;
+	margin-left: 2px;
+}
+
+#email
+{
+	margin-left: 60px;
+	margin-top: 37px;
+}
+
+#email-label
+{
+	position: absolute;
+	margin-top: 2px;
+	margin-left: 62px;
+}
+
+#password
+{
+	margin-left: -414px;
+	margin-top: 14px;
+}
+
+#password-label
+{
+	position: absolute;
+	margin-top: 2px;
+	left: 340px;
+}
+
+
+label
+{
+	line-height: 48px;
+	font-family: sans-serif;
+	font-weight: 300;
+	color: #585C65;
+}
+
+input[type="text"]
+{
+	border: 1.5px solid #BEBFC0;
+	border-radius: 5px;
+	color: #585C65;
+	margin-top: -10px;
+	height: 44px;
+	width: 350px;
+}
+
+input:hover { 
+    outline:none;
+    border-color:#9ecaed;
+    box-shadow: 0px 0px 7px #9ecaed;
+}
+
+input:focus { 
+    outline:none;
+    border-color:#9ecaed;
+    box-shadow: 0px 0px 7px #9ecaed;
+}
+
+
+
+#submit
+{
+	margin-top: 28px;
+	height: 44px;
+	width: 350px;
+	background-color: #ED6E3F;
+	border: 1.5px solid #BEBFC0;
+	border-radius: 5px;
+	color: white;
+	transition: 0.3s ease-out;
+}
+
+#submit:hover
+{
+	background-color: #A43D19;
+}
+
+#login-link
+{
+
+	margin-top: 20px;
+	margin-right: 113px;
+	color: #585C65;
+}
+
+#login-link a
+{
+	text-decoration: none;
+	color: #ED6E3F;
+
+}
+
+#login-link a:hover
+{
+	text-decoration: underline;
+	color: #ED6E3F;
+}
+
+#terms1
+{
+	margin-top: 10px;
+	position: relative;
+	margin-right: 40px;
+	color: #585C65;
+}
+
+
+#terms2 a
+{
+	color: #ED6E3F;
+}
+
+#terms2
+{
+	position: relative;
+	margin-right: 88px;
+}
+
+
+#empty
+{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+}
+/*#bg1
+{
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	background-image: url(bg.png);
+	background-size: cover;
+	left: 72.3%;
+	top: 51.5%;
+}
+
+#bg2
+{
+	position: absolute;
+	width: 350px;
+	height: 350px;
+	background-image: url(bg2.jpg);
+	background-size: cover;
+	left: -13px;
+	top: 57.5%;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
