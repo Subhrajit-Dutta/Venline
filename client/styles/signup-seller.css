@@ -1,21 +1,13 @@
-body
-{
-   background-color: red;	
-}
-
-
-
 #signup
 {
-	height: 823px;
+	height: auto;
 	text-align: center;
 	background-color: white;
 }
 
 #signup-heading
 {
-	margin-right: 550px;
-/*	margin-top: 100px;*/
+	margin: auto;
 	font-family: 'Lato', sans-serif;
 	font-weight: 1000;
 	font-size: 23px;
@@ -25,66 +17,58 @@ body
 
 #name
 {
-	margin-top: 30px;
+	
 }
 
 #name-label
 {
-	position: absolute;
-	margin-top: -7px;
-	margin-left: 2px;
+    bottom: 2rem;
+	left: 0;
 }
 
 #adhar
 {
-	margin-left: 60px;
-	margin-top: 30px;
+	
 }
 
 #adhar-label
 {
-	position: absolute;
-	margin-top: -7px;
-	margin-left: 62px;
+	bottom: 2rem;
+	left: 0;
 }
 
 
 #phn
 {
-	margin-top: 37px;
+	
 }
 
 #phn-label
 {
-	position: absolute;
-	margin-top: px;
-	margin-left: 2px;
+	bottom: 2rem;
+	left: 0;
 }
 
 #email
 {
-	margin-left: 60px;
-	margin-top: 37px;
+	
 }
 
 #email-label
 {
-	position: absolute;
-	margin-top: 2px;
-	margin-left: 62px;
+	bottom: 2rem;
+	left: 0;
 }
 
 #password
 {
-	margin-left: -414px;
-	margin-top: 14px;
+    
 }
 
 #password-label
 {
-	position: absolute;
-	margin-top: 2px;
-	left: 340px;
+	bottom: 2rem;
+	left: 0;
 }
 
 
@@ -94,6 +78,27 @@ label
 	font-family: sans-serif;
 	font-weight: 300;
 	color: #585C65;
+	position: absolute;
+}
+
+.input{
+	position: relative;
+}
+
+#inputs{
+	display: flex;
+	flex-wrap: wrap;
+	width: 75%;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+	margin-top: 2rem;
+}
+
+.pass{
+	position: relative;
+	right: 11.75rem;
 }
 
 input[type="text"], input[type="password"], input[type="number"], input[type="email"]
@@ -118,8 +123,6 @@ input:focus {
     border-color:#9ecaed;
     box-shadow: 0px 0px 7px #9ecaed;
 }
-
-
 
 #submit
 {
@@ -186,6 +189,14 @@ input:focus {
 	height: 100px;
 	background-color: white;
 }
+
+@media screen and (max-width: 980px){
+    .pass{
+    	position: relative;
+    	right: 0;
+    }
+}
+
 /*#bg1
 {
 	position: absolute;
