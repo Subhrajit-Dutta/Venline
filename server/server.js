@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../client', 'index.html'));
 });
 //Register user 
-app.use('/api/user',userRoutes)
+app.use('/api/consumer',userRoutes)
 server.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`.green.bold);
 });
