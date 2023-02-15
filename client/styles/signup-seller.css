@@ -14,10 +14,21 @@
 	color: black;
 }
 
+
+#name
+{
+	
+}
+
 #name-label
 {
     bottom: 2rem;
 	left: 0;
+}
+
+#adhar
+{
+	
 }
 
 #adhar-label
@@ -26,16 +37,32 @@
 	left: 0;
 }
 
+
+#phn
+{
+	
+}
+
 #phn-label
 {
 	bottom: 2rem;
 	left: 0;
 }
 
+#email
+{
+	
+}
+
 #email-label
 {
 	bottom: 2rem;
 	left: 0;
+}
+
+#password
+{
+    
 }
 
 #password-label
@@ -167,10 +194,6 @@ input:focus {
     .pass{
     	position: relative;
     	right: 0;
-    }
-
-    #empty{
-    	display: none;
     }
 }
 
