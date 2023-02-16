@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profile</title>
+	<script src="https://kit.fontawesome.com/9b7f16bc1d.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="styles/profile.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="profile">
+    	<div id="header">
+    		<div id="img">
+    		    <img src="images/self.png">
+    		</div>
+
+    		<div id="details">
+
+    			<div id="name"><h1>Niladri Adhikary</h1></div>
+
+    			<div id="location"><i style="color: red;" class="fa-solid fa-location-dot"></i> Kolkata</div>
+
+    			<div id="reviews">
+    				<h5>Reviews</h5>
+    				<div class="ratings">
+    					<span>8.35</span>
+    					<div class="stars-outer">
+    						<div class="stars-inner"></div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div id="edit"><i class="fa-regular fa-pen-to-square"></i> Edit Profile</div>
+    	</div>
+
+    	<div id="navbox">
+    		<button class="navboxes navcolor">Products</button>
+    		<button class="navboxes">Upload Product</button>
+    		<button class="navboxes">Edit Profile</button>
+    	</div>
+
+    	<div class="box show" id="products">
+    	  <div id="cards">
+            <div class="card">
+                <img src="images/apple-min.png">
+                <div class="name">Example Name</div>
+                <div class="description"><p>Lorem ipsumid est laborum.</p></div>
+                <div class="rating">5.0 <i class="fa-solid fa-star"></i></div>
+                <div class="price">Rs. 40 / KG</div>
+                <div class="add2cart">Add to Cart</div>
+            </div>
+            <div class="card">
+                <img src="images/tomato2-min.png">
+                <div class="name">Example Name</div>
+                <div class="description"><p>Lorem ipsumid est laborum.</p></div>
+                <div class="rating">5.0 <i class="fa-solid fa-star"></i></div>
+                <div class="price">Rs. 50 / KG</div>
+                <div class="add2cart">Add to Cart</div>
+            </div>
+            <div class="card">
+                <img src="images/broccoli-min.png">
+                <div class="name">Example Name</div>
+                <div class="description"><p>Lorem ipsumid est laborum.</p></div>
+                <div class="rating">5.0 <i class="fa-solid fa-star"></i></div>
+                <div class="price">Rs. 50 / KG</div>
+                <div class="add2cart">Add to Cart</div>
+            </div>
+          </div> 
+    	</div>
+
+    	<div class="box" id="upload">
+    		<button>
+    		<i class="fa-solid fa-upload"></i>
+    		<h3>Upload</h3>
+    		</button>
+    	</div>
+
+    	<div class="box" id="editProducts">
+    		<form>
+    			<h1>EDIT PROFILE</h1>
+    			<div class="inputs">
+    		        <label for="name">Name</label><br>
+    		        <input type="text" name="name" id="name" value="Niladri Adhikary">
+    		    </div>
+
+    		    <div class="inputs">
+    		        <label for="phone">Phone</label><br>
+    		        <input type="number" name="phone" id="phone" value="7001599126">
+    		    </div>
+
+    		    <div class="inputs">
+    		        <label for="email">Email</label><br>
+    		        <input type="email" name="email" id="email" value="niladri@gmail.com">
+    		    </div>
+
+    		    <div class="inputs">
+    		        <label for="password">Change Password</label><br>
+    		        <input type="password" name="password" id="password">
+    		    </div>
+
+    		    <div class="inputs">
+    		        <button type="submit">Save Changes</button>
+    		    </div>
+            </form>
+    	</div>
+    </div>
+  <script type="text/javascript" src="javascript/profile.js"></script>  
+</body>
+</html>
