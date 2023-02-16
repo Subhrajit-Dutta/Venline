@@ -6,7 +6,7 @@ const registerUser=asyncHandler( async (req,res)=>{
     const{username,email,password,phone}= req.body
     if (!username||!email||!password) {
         res.status(400);
-        throw new Error("Please provide Error Field")
+        throw new Error("Please provide proper Field")
     }
     const userExists= await User.findOne({email});
     if (userExists) {
@@ -39,10 +39,14 @@ const registerUser=asyncHandler( async (req,res)=>{
         if(user && (await user.matchpassword(password))){
             res.json({
                 _id:user._id,
-                username:user.username,
-                email: user.email,
-                token:generateToken(user._id),
+            username:user.username,
+            password:user.password,
+            //token:generateToken(user._id)
             })
+        }
+        else
+        {
+            throw new Error("Username or  Password is incorrect")
         }
     })
     module.exports = {registerUser,authUser}

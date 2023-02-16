@@ -5,6 +5,7 @@ const dotenv= require('dotenv')
 const connectDb= require('./config/Database')
 const colors= require('colors')
 const userRoutes= require('./routes/userRoutes')
+const { notfound, errorhandler } = require('./middlewares/errorHandler');
 dotenv.config()
 connectDb()
 const app = express();
@@ -21,6 +22,10 @@ app.get('/', (req, res) => {
 });
 //Register user 
 app.use('/api/consumer',userRoutes)
+//middlewares for error Handling
+app.use(notfound)
+app.use(errorhandler)
+// Start the server
 server.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`.green.bold);
 });

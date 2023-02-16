@@ -31,6 +31,8 @@ const consumerschema = mongoose.Schema({
     consumerschema.methods.matchpassword= async function (enteredPassword){
        return await bcrypt.compare(enteredPassword, this.password)
         console.log(this.password)
+        console.log(this.email)
+        console.log(this.username)
 
     }
     consumerschema.pre('save',async function (next){
@@ -40,6 +42,9 @@ const consumerschema = mongoose.Schema({
         const salt= await bcrypt.genSalt(10)
         this.password= await bcrypt.hash(this.password,salt)
         const password=this.password
+        console.log(this.password)
+        console.log(this.email)
+        console.log(this.username)
     })
     const  User = mongoose.model("User",consumerschema)
     module.exports = User
