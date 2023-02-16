@@ -32,6 +32,7 @@ const registerUser=asyncHandler( async (req,res)=>{
         res.status(400)
         throw new Error("Failed to register")
     }
+    console.log(username,password,email,phone)
     })
     const authUser=asyncHandler(async(req,res)=>{
         const{email,password}=req.body;
@@ -40,13 +41,15 @@ const registerUser=asyncHandler( async (req,res)=>{
             res.json({
                 _id:user._id,
             username:user.username,
-            password:user.password,
+            email:user.email,
+            phone:user.phone,
+
             //token:generateToken(user._id)
             })
         }
         else
         {
-            throw new Error("Username or  Password is incorrect")
+            throw new Error("Uername or  Password is incorrect")
         }
     })
     module.exports = {registerUser,authUser}

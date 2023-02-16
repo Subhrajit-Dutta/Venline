@@ -29,10 +29,10 @@
 
           </div>
 
-          <form method="post" action="/api/consumer">
+          <form method="post" action="http://localhost:3000/api/consumer">
 
-          <label for = "name" id="name-label"> Name </label> <br>
-          <input type="text" name="name" id="name"><br>
+          <label for = "username" id="username-label"> Name </label> <br>
+          <input type="text" name="username" id="username"><br>
 
 
           <label for = "email" id="email-label"> Email* </label> <br>
@@ -48,7 +48,7 @@
           <i class="hide fa-solid fa-eye-slash"></i> -->
 
 
-          <button class="sub-btn" type="submit" id="submit">Create account</button>
+          <button class="sub-btn" type="submit" id="submit" onclick="registeruser()">Create account</button>
 
           </form>
 
