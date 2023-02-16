@@ -8,7 +8,7 @@ body
 #signup
 {
 /*	margin-left: 100px;*/
-	margin-top: 70px;
+/*	margin-top: 70px;*/
 	text-align: center;
 }
 
@@ -75,6 +75,15 @@ body
 	color: #585C65;
 }
 
+#phone-label
+{
+	line-height: 48px;
+	font-family: sans-serif;
+	font-weight: 300;
+	margin-right: 300px;
+	color: #585C65;
+}
+
 #password-label
 {
 	line-height: 48px;
@@ -85,7 +94,7 @@ body
 }
 
 
-input[type="password"] , input[type="email"] , input[type="text"]
+input[type="password"] , input[type="email"] , input[type="text"] , input[type="number"]
 {
 	border: 1.5px solid #BEBFC0;
 	border-radius: 5px;

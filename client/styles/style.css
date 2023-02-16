@@ -273,8 +273,8 @@ section{
 	width: 100%;
 	flex-wrap: wrap;
 	height: auto;
-	padding: 3rem;
-	padding-top: 1.5rem;
+	padding: 1.5rem;
+	padding-bottom: 3rem;
 }
 
 .category{
