@@ -56,7 +56,7 @@ body
 	color: #585C65;
 }
 
-#name-label
+#username-label
 {
 /*	margin-top: 40px;*/
 	line-height: 48px;
@@ -176,17 +176,3 @@ input:focus {
 	position: relative;
 	margin-right: 88px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
