@@ -13,6 +13,7 @@ let navBoxes = document.getElementsByClassName('navboxes');
 let products = document.getElementById('products');
 let upload = document.getElementById('upload');
 let edit = document.getElementById('editProducts');
+let editbtn = document.getElementById('edit');
 
 
 function productsShow() {
@@ -45,3 +46,4 @@ function editShow() {
 navBoxes[0].addEventListener('click',productsShow);
 navBoxes[1].addEventListener('click',uploadShow);
 navBoxes[2].addEventListener('click',editShow);
+editbtn.addEventListener('click',editShow);
