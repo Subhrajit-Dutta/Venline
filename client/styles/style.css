@@ -109,7 +109,7 @@ main{
 	border-radius: 30% 40% 88% 12%;
 	animation: move 2s alternate infinite;
 	opacity: 0.4;
-	z-index: 99;
+	z-index: 97;
 }
 
 /*navbar*/
@@ -195,16 +195,16 @@ section{
 /*header*/
 
 #header{
-	margin-top: 1.85rem;
-	height: 24rem;
+	margin-top: 1.5rem;
+	height: 20rem;
 	width: 100%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	flex-direction: row;
 }
 
 #header h1{
-	font-size: 2.75rem;
+	font-size: 2.05rem;
 	font-weight: 500;
 }
 
@@ -218,7 +218,7 @@ section{
 
 #header-text{
 	width: 50%;
-	padding-left: 5rem;
+	padding-left: 6.5rem;
 }
 
 #header-text button{
@@ -237,7 +237,7 @@ section{
 }
 
 #header-img{
-	width: 30%;
+	width: 25%;
 }
 
 @media screen and (max-width: 978px){
@@ -274,7 +274,10 @@ section{
 	flex-wrap: wrap;
 	height: auto;
 	padding: 1.5rem;
-	padding-bottom: 3rem;
+	padding-top: 0.5rem;
+	padding-bottom: 2.5rem;
+	margin-bottom: 1.5rem;
+	z-index: 98;
 }
 
 .category{
@@ -319,7 +322,6 @@ section{
 }
 
 #search-bar{
-	margin-top: 2rem;
 	margin-bottom: 1.5rem;
 	box-shadow: 0px 2px 8px 0px #c7c7c7;
 	padding: 0.5rem;
@@ -452,18 +454,18 @@ section{
 }
 
 .card{
-	height: 26rem;
+	height: 24.5rem;
 	width: 20rem;
 	border-radius: 1rem;
 	position: relative;
 	background-color: white;
-	border: 12px white solid;
+	border: 7px white solid;
 	z-index: 98;
 	box-shadow: 0px 2px 8px 0px #c7c7c7;
 }
 
 .card img{
-	height: 70%;
+	height: 68%;
 	width: 100%;
 	border-radius: 1rem;
 }
