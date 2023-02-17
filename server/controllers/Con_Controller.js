@@ -4,14 +4,16 @@ const User=require("../models/ConsumerModel");
 const generateToken=require("../config/generateToken");
 const registerUser=asyncHandler( async (req,res)=>{
     const{username,email,password,phone}= req.body
-    if (!username||!email||!password) {
+    if (!username||!email||!password||!phone) {
         res.status(400);
+        console.log(Error)
         throw new Error("Please provide proper Field")
     }
     const userExists= await User.findOne({email});
     if (userExists) {
         res.status(400)
         throw new Error("User already Exists");
+        
     }
     const user = User.create(
         {
@@ -42,13 +44,14 @@ const registerUser=asyncHandler( async (req,res)=>{
                 _id:user._id,
             username:user.username,
             email:user.email,
-            phone:user.phone,
-
-            //token:generateToken(user._id)
+            phone:user.phone,    
+        //token:generateToken(user._id)
             })
+            console.log("login Confirmed")
         }
         else
         {
+            console.log(Error)
             throw new Error("Uername or  Password is incorrect")
         }
     })
