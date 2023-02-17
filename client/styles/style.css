@@ -372,6 +372,9 @@ section{
 #drop-icon{
 	position: relative;
 	right: 20px;
+}
+
+#drop-icon i{
 	cursor: pointer;
 }
 
@@ -414,13 +417,15 @@ section{
 	position: relative;
 	top: 2px;
 	cursor: pointer;
+	font-size: 0.85rem;
 }
 
 .filter-box{
-	height: 1.75rem;
+	height: 1.4rem;
 	color: #696969;
 	text-align: center;
-	width: 5rem;
+	font-size: 0.85rem;
+	width: 4.5rem;
 	border-radius: 0.5rem;
 	border: 1px solid #a9a3a3;
 	padding: 0.25rem;
@@ -537,7 +542,7 @@ section{
 }
 
 .provide-card{
-	height: 22rem;
+	height: auto;
 	width: 30rem;
 	box-sizing: border-box;
 	padding: 2rem;
@@ -610,7 +615,7 @@ section{
 	margin-right: auto;
 }
 
-@media screen and (max-width: 920px){
+@media screen and (max-width: 1020px){
     #wave{
     	display: none;
     }
@@ -632,12 +637,15 @@ section{
 	color: white;
 }
 
+#about-text{
+	width: 60%;
+}
+
 #about h3{
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: 400;
 	line-height: 1.75rem;
 	word-spacing: 0.35rem;
-	width: 45%;
 	display: inline-block;
 	vertical-align: top;
 	color: white;
@@ -655,7 +663,7 @@ section{
     width: 50%;
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 1020px){
 	#about-img{
 		display: none;
 	}
