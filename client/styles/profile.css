@@ -151,20 +151,18 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 2rem;
+	width: 100%;
+	gap: 1rem;
 }
 
 .card{
-	height: 25rem;
+	height: 26rem;
 	width: 20rem;
 	border-radius: 1rem;
 	position: relative;
 	background-color: white;
-	border: 7.5px white solid;
+	border: 12px white solid;
 	z-index: 98;
-}
-
-.card:hover{
 	box-shadow: 0px 2px 8px 0px #c7c7c7;
 }
 
@@ -174,12 +172,16 @@ body{
 	border-radius: 1rem;
 }
 
+.card-body{
+	position: relative;
+}
+
 .rating{
 	font-weight: 400;
-	font-size: 0.9rem;
-	height: 1rem;
-	width: 2.75rem;
-	background-color: #188718;
+	font-size: 0.85rem;
+	height: 0.95rem;
+	width: 2.7rem;
+	background-color: #278d27;
 	text-align: center;
 	color: white;
 	border-radius: 0.5rem;
@@ -190,7 +192,7 @@ body{
 }
 
 .rating i{
-	font-size: 0.6rem;
+	font-size: 0.5rem;
 	position: relative;
 	bottom: 2px;
 	color: white;
@@ -204,6 +206,7 @@ body{
 .description{
 	font-weight: 0;
 	color: #868686;
+	margin-bottom: 1rem;
 }
 
 .price{
@@ -214,6 +217,7 @@ body{
 	padding: 0.5rem;
 	box-sizing: border-box;
 	display: inline-block;
+	border-radius: 0.25rem;
 }
 
 .add2cart{
@@ -222,6 +226,8 @@ body{
 	border: 1px solid #696969;
 	font-weight: 100;
 	margin-left: 0.5rem;
+	border-radius: 0.25rem;
+	cursor: pointer;
 }
 
 /*upload*/

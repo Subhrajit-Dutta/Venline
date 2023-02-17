@@ -160,7 +160,7 @@ nav > div{
     margin-left: 10px;
     border-radius: 4px;
     height: 120px;
-    width: 120px;
+    width: 130px;
 }
 
 .product-seller, .product-stock, .remove, .price, .quantity, .total
@@ -325,7 +325,7 @@ input:focus
 {
     border: 0;
     width: 35.9%;
-    height: 38px;
+    height: 39px;
     font-size: 100%;
     background-color: black;
     color: white;
@@ -368,7 +368,7 @@ input:focus
 
 #order
 {
-    padding-top: 10px;
+    padding-top: 12.5px;
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
