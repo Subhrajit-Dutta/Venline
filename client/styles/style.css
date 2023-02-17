@@ -100,12 +100,12 @@ main{
 	border-radius: 58% 0% 0% 100%;
 	background-color: #abb166bf;
 	opacity: 0.4;
-	height: 37rem;
+	height: 34rem;
 	width: 3rem;
 }
 
 .back-animation:nth-child(3){
-	top: 38rem;
+	top: 35rem;
 	border-radius: 30% 40% 88% 12%;
 	animation: move 2s alternate infinite;
 	opacity: 0.4;
@@ -195,8 +195,9 @@ section{
 /*header*/
 
 #header{
-	margin-top: 1.5rem;
-	height: 20rem;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+	height: auto;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -204,7 +205,7 @@ section{
 }
 
 #header h1{
-	font-size: 2.05rem;
+	font-size: 2rem;
 	font-weight: 500;
 }
 
@@ -245,14 +246,27 @@ section{
 		display: none;
 	}
 
+	#header{
+		margin-top: 3rem;
+	}
+
 	#header-text{
-		width: 80%;
+		width: 100%;
+	}
+
+	#header h1{
+		margin: 0;
+		margin-top: 3.5rem;
 	}
 }
 
 @media screen and (max-width: 720px){
 	#header-text h1{
 		font-size: 2rem;
+	}
+
+	#header{
+		margin-top: 2rem;
 	}
 
 	#header-text{
@@ -449,18 +463,21 @@ section{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 82%;
+	width: 85%;
 	gap: 2rem;
 }
 
 .card{
 	height: 24.5rem;
-	width: 20rem;
+	width: 19rem;
 	border-radius: 1rem;
 	position: relative;
 	background-color: white;
-	border: 7px white solid;
+	border: 8px white solid;
 	z-index: 98;
+}
+
+.card:hover{
 	box-shadow: 0px 2px 8px 0px #c7c7c7;
 }
 
@@ -516,6 +533,7 @@ section{
 	box-sizing: border-box;
 	display: inline-block;
 	border-radius: 0.25rem;
+	font-size: 0.85rem;
 }
 
 .add2cart{
@@ -526,6 +544,7 @@ section{
 	margin-left: 0.5rem;
 	border-radius: 0.25rem;
 	cursor: pointer;
+	font-size: 0.85rem;
 }
 
 /*provide section*/
@@ -537,7 +556,7 @@ section{
 }
 
 #provide h1{
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 100;
 	margin: auto;
 	margin-bottom: 3rem;
@@ -637,7 +656,7 @@ section{
 }
 
 #about h1{
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 350;
 	margin: auto;
 	margin-bottom: 3rem;
@@ -649,7 +668,7 @@ section{
 }
 
 #about h3{
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	font-weight: 400;
 	line-height: 1.75rem;
 	word-spacing: 0.35rem;
