@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" type="text/css" href="styles/cart.css">
+  <script src="https://kit.fontawesome.com/9b7f16bc1d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/vinline.png" height="50px" width="200px">
+        </div>
+        <div id="navigation">
+            <div><a class="nav-link" href="#">Home</a></div>
+            <div><a class="nav-link" href="#">Blog</a></div>
+            <div><a class="nav-link" href="#about">About</a></div>
+            <div><a class="nav-link" href="#">Contact</a></div>
+            <div class="navicon"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
+            <div class="navicon"><a href="#"><i class="fa-solid fa-bell"></i></a></div>
+            <div class="btn" onclick="location.href='signup.html'">Login/Signup</div>
+        </div>
+    </nav>
+  <main>
+    
+    
+    <!-- listing -->
+
+    <div id="heading">
+      <h1 style="margin-left: 5px;">Items in your cart:</h1>
+    </div>
+    <!-- <div id="table">
+      <h3>
+        Product
+      </h3>
+      <h3>
+        Price
+      </h3>
+      <h3>
+        Quantity
+      </h3>
+      <h3>
+        Total
+      </h3>
+    </div> -->
+
+
+    <div id="parent">
+
+
+        <div id="list">
+
+            <div class="seperation-line">
+        
+            </div>
+            <div class="product">
+
+              <div class="product-image"> 
+                <img src="images/apple.png">
+
+                <div class="product-description">
+
+                  <h3 class="product-name item-heading">Example Name</h3>
+                  <div class="product-seller">Seller: Onkit</div>
+                  <div class="product-stock">In Stock</div>
+                  <div class="remove"><a href="..."><i class="fa-solid fa-trash"></i></a></div>
+
+                </div>
+              </div>
+
+              <div class="product-price">
+                <h3>Price</h3>
+                <div class="price"> 40/kg</div>
+              </div>
+
+              <div class="product-quantity"> 
+                <h3> Quantity</h3>
+                <div class="quantity"> <i class="fa-solid fa-minus minus-icon"></i> 1 <i class="fa-solid fa-plus plus-icon"></i> </div>
+              </div>
+
+              <div class="product-total">
+                <h3>Total</h3>
+                <div class="total"> 40 Rs.</div>
+              </div>
+
+            </div>
+
+            <div class="seperation-line">
+                
+            </div>
+
+
+
+            <div class="product">
+
+              <div class="product-image"> 
+                <img src="images/tomato2.png">
+
+                <div class="product-description">
+
+                  <h3 class="product-name item-heading">Example Name</h3>
+                  <div class="product-seller">Seller: Onkit</div>
+                  <div class="product-stock">In Stock</div>
+                  <div class="remove"><a href="..."><i class="fa-solid fa-trash"></i></a></div>
+
+                </div>
+              </div>
+
+              <div class="product-price">
+                <h3>Price</h3>
+                <div class="price"> 40/kg</div>
+              </div>
+
+              <div class="product-quantity"> 
+                <h3> Quantity</h3>
+                <div class="quantity"> <i class="fa-solid fa-minus minus-icon"></i> 1 <i class="fa-solid fa-plus plus-icon"></i> </div>
+              </div>
+
+              <div class="product-total">
+                <h3>Total</h3>
+                <div class="total"> 40 Rs.</div>
+              </div>
+
+            </div>
+
+            <div class="seperation-line">
+                
+            </div>
+
+
+            <div class="product">
+
+              <div class="product-image"> 
+                <img src="images/broccoli.png">
+
+                <div class="product-description">
+
+                  <h3 class="product-name item-heading">Example Name</h3>
+                  <div class="product-seller">Seller: Onkit</div>
+                  <div class="product-stock">In Stock</div>
+                  <div class="remove"><a href="..."><i class="fa-solid fa-trash"></i></a></div>
+
+                </div>
+              </div>
+
+              <div class="product-price">
+                <h3>Price</h3>
+                <div class="price"> 40/kg</div>
+              </div>
+
+              <div class="product-quantity"> 
+                <h3> Quantity</h3>
+                <div class="quantity"> <i class="fa-solid fa-minus minus-icon"></i> 1 <i class="fa-solid fa-plus plus-icon"></i> </div>
+              </div>
+
+              <div class="product-total">
+                <h3>Total</h3>
+                <div class="total"> 40 Rs.</div>
+              </div>
+
+            </div>
+
+            <div class="seperation-line">
+                
+            </div>
+        </div>
+
+
+        <div id="summary">
+            
+            <div id="coupon">
+                <label for="coupon" id="coupon-label">ENTER COUPON CODE</label><br>
+                <input type="text" name="coupon"  id="coupon-form" placeholder="Coupon Code">
+                <button type="submit" id="coupon-submit">Apply</button>
+            </div>
+
+            <div class="calculation">
+
+              <div class="reason" style="margin-top: 20px;">Sub-total: </div> <div class="reason" style="margin-top: 20px;"> 120.00 Rs. </div>
+            </div>
+
+            <div class="calculation">
+              
+              <div class="reason">Delivery: </div> <div class="reason"> 49.00 Rs. </div>
+
+            </div>
+
+            <div class="calculation">
+              
+              <div class="reason">Discount: </div> <div class="reason"> 00.00 Rs. </div>
+
+            </div>
+
+            <div id="line">
+              
+            </div>
+
+            <div class="calculation">
+              
+              <div class="total-final">Total: </div> <div class="total-final"> 169.00 Rs. </div>
+
+            </div>
+
+
+            <button type="submit" id="order"><i class="fa-solid fa-lock" style="padding-right: 10px;"></i>Checkout</button>
+
+        </div>
+
+    </div>
+    
+
+
+    
+
+
+    </main>
+
+    <script type="text/javascript" src="javascript/cart.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
