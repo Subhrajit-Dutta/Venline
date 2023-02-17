@@ -5,10 +5,12 @@ const dotenv= require('dotenv')
 const connectDb= require('./config/Database')
 const colors= require('colors')
 const userRoutes= require('./routes/userRoutes')
+const parse= require('body-parser')
 const { notfound, errorhandler } = require('./middlewares/errorHandler');
 dotenv.config()
 connectDb()
 const app = express();
+app.use(parse.json())
 app.use(express.json());
 const PORT = 3000 || process.env.PORT;
 const server = http.createServer(app);
