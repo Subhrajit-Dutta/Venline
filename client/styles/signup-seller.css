@@ -14,39 +14,11 @@
 	color: black;
 }
 
-#name-label
-{
-    bottom: 2rem;
-	left: 0;
-}
-
-#adhar-label
-{
-	bottom: 2rem;
-	left: 0;
-}
-
-#phn-label
-{
-	bottom: 2rem;
-	left: 0;
-}
-
-#email-label
-{
-	bottom: 2rem;
-	left: 0;
-}
-
-#password-label
-{
-	bottom: 2rem;
-	left: 0;
-}
-
 
 label
 {
+	bottom: 2rem;
+	left: 0;
 	line-height: 48px;
 	font-family: sans-serif;
 	font-weight: 300;
