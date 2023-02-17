@@ -89,7 +89,7 @@ nav > div{
 #heading
 {
     color: #696969;
-    margin-top: 120px;
+    margin-top: 4.5rem;
     margin-left: 5px;
 }
 
@@ -160,7 +160,7 @@ nav > div{
     margin-left: 10px;
     border-radius: 4px;
     height: 120px;
-    width: 130px;
+    width: 135px;
 }
 
 .product-seller, .product-stock, .remove, .price, .quantity, .total
