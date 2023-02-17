@@ -270,6 +270,7 @@ nav > div{
 { 
     margin-top: -10px;
     width: 75%;
+/*    min-width: 639px;*/
 }
 
 /*-----order sumamry-----*/
@@ -284,11 +285,19 @@ nav > div{
 
 #summary
 {
+/*    min-width: 200px;*/
     width: 25%;
-    height: 100px;
-/*    border: 2px solid black;*/
+    height: auto;
+    margin-top: -6px;
 }
 
+#coupon
+{
+    margin-left: -3px;
+    display: flex;
+/*    flex-wrap: wrap;*/
+    justify-content: center;
+}
 
 #coupon-label
 {
@@ -297,17 +306,9 @@ nav > div{
     line-height: 25px;
 }
 
-input[type="text"]
-{
-    padding: 0px;
-    padding-left: 10px;
-}
-
 
 #coupon-form
 {
-    margin: 0;
-    margin-top: -2px;
     color: #696969;
     font-size: 15px;
     width: 59%;
@@ -322,7 +323,6 @@ input:focus
 
 #coupon-submit
 {
-    margin-left: -5px;
     border: 0;
     width: 35.9%;
     height: 38px;
@@ -368,8 +368,11 @@ input:focus
 
 #order
 {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
     margin-top: 40px;
-    margin-left: 26%;
+    margin-left: 24%;
     font-size: 18px;
     font-weight: 600;
     height: 44px;
@@ -387,4 +390,86 @@ input:focus
 }
 
 
+@media screen and (max-width: 1100px)
+{
+    main
+    {
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    #coupon
+    {
+        margin-left: -3px;
+    }
+}
 
+@media screen and (max-width: 995px)
+{
+    main
+    {
+        width: 90%;
+    }
+    #coupon
+    {
+        margin-left: -5px;
+    }
+    .seperation-line
+    {
+        width: 98%;
+    }
+    .product
+    {
+        width: 98%;
+    }
+    #list
+    {
+        width: 100%
+    }
+    #parent
+    {
+        display: block;
+    }
+    #summary
+    {
+        padding-top: 70px;
+        margin-bottom: 50px;
+        margin: auto;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 650px)
+{
+    #coupon
+    {
+        margin-left: -5px;
+    }
+    main
+    {
+        width: 100%;
+    }
+    .seperation-line
+    {
+        width: 98%;
+    }
+    .product
+    {
+        width: 98%;
+    }
+    #list
+    {
+        width: 100%
+    }
+    #parent
+    {
+        display: block;
+    }
+    #summary
+    {
+        padding-top: 70px;
+        margin: auto;
+        width: 65%;
+    }
+}
