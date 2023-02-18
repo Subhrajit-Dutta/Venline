@@ -160,7 +160,7 @@ nav > div{
 }
 
 .nav-link:hover{
-    color: red;
+    color: #39b364;
 }
 
 #navigation .btn{
@@ -217,7 +217,7 @@ nav > div{
 	left: -8rem;
 	height: 14rem;
 	width: 16rem;
-	background-image: linear-gradient(#ff6112,#eb522f);
+	background-color: #39b364;
 	align-items: center;
 	border-radius: 0.85rem;
 	display: none;
@@ -255,7 +255,7 @@ nav > div{
 	padding: 0.5rem;
 	font-size: 0.9rem;
 	margin-top: 0.8rem;
-	background-color: #e78f73;
+	background-color: #8ec792;
 	font-weight: 500;
 	border-radius: 0.5rem;
 	color: #ebebeb;
@@ -589,7 +589,7 @@ section{
 	font-size: 0.85rem;
 	height: 0.95rem;
 	width: 2.7rem;
-	background-color: #278d27;
+	background-color: #39b364;
 	text-align: center;
 	color: white;
 	border-radius: 0.5rem;
@@ -619,7 +619,7 @@ section{
 
 .price{
 	display: inline-block;
-	background-color: #ff562f;
+	background-color: #39b364;
 	color: white;
 	font-weight: 900;
 	padding: 0.5rem;
@@ -684,7 +684,7 @@ section{
 }
 
 .cardcolor{
-    background-image: linear-gradient(#ff6112,#eb522f);
+    background-color: #39b364;
 	color: white;
 }
 
