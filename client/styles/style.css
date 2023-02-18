@@ -119,12 +119,14 @@ main{
 	justify-content: space-between;
 	text-align: center;
 	padding: 1.5rem;
+	padding-top: 1rem;
 	box-sizing: border-box;
 	position: fixed;
 	top: 0px;
 	width: 100%;
 	z-index: 100;
     color: #696969;
+    transition: padding-top 0.5s ease-in-out;
 }
 
 nav > div{
@@ -135,6 +137,7 @@ nav > div{
 .nav-move{
     box-shadow: 0px 0px 10px 0px grey;
     background-color: white;
+    padding-top: 1.5rem !important;
 }
 
 #navigation{
@@ -172,6 +175,96 @@ nav > div{
 
 .navicon i{
 	color: black;
+}
+
+#profile{
+	width: auto !important;
+	margin-left: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	position: relative;
+}
+
+#profile-img{
+	height: 35px;
+	width: 35px;
+	display: inline-block;
+}
+
+#profile-img img{
+	height: inherit;
+	width: inherit;
+	border-radius: 50%;
+}
+
+#profile-name{
+	display: inline-block;
+}
+
+#profile i{
+	position: relative;
+	top: 2px;
+	cursor: pointer;
+}
+
+#profile-card{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 2.5rem;
+	left: -8rem;
+	height: 14rem;
+	width: 16rem;
+	background-image: linear-gradient(#ff6112,#eb522f);
+	align-items: center;
+	border-radius: 0.85rem;
+	display: none;
+}
+
+#profile-card-img{
+	height: 70px;
+	width: 70px;
+	margin-top: 2rem;
+}
+
+#profile-card-img img{
+	height: inherit !important;
+	width: inherit !important;
+	border-radius: 50%;
+}
+
+#profile-card h4{
+	margin: 0;
+	margin-top: 0.75rem;
+	font-size: 1.05rem;
+	color: black;
+	font-weight: 500;
+	color: white;
+	margin-bottom: 0.25rem;
+}
+
+#profile-card p{
+	margin: 0;
+	font-size: 0.8rem;
+	color: white;
+}
+
+#profile-card button[type="button"]{
+	padding: 0.5rem;
+	font-size: 0.9rem;
+	margin-top: 0.8rem;
+	background-color: #e78f73;
+	font-weight: 500;
+	border-radius: 0.5rem;
+	color: #ebebeb;
+	outline: none;
+	border: none;
+}
+
+#profile-card button[type="button"]:hover{
+	box-shadow: 0px 2px 8px 0px #c7c7c7;
 }
 
 @media screen and (max-width: 720px){
@@ -464,7 +557,7 @@ section{
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 85%;
-	gap: 2rem;
+	gap: 3rem;
 }
 
 .card{
@@ -591,7 +684,7 @@ section{
 }
 
 .cardcolor{
-    background-color: #ff5200bd;
+    background-image: linear-gradient(#ff6112,#eb522f);
 	color: white;
 }
 

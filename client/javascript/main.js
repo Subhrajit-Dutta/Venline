@@ -55,3 +55,15 @@ arrow_down.addEventListener('click',function(event){
     else
         arrow_box.style.display = 'none';
 });
+
+//profile 
+
+let dropProfile = document.querySelector('#profile i');
+let profile = document.getElementById('profile-card');
+
+dropProfile.addEventListener('click',function(){
+    if(profile.style.display == 'none')
+        profile.style.display = 'flex';
+    else
+        profile.style.display = 'none';
+});

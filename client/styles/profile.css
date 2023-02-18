@@ -67,7 +67,7 @@ body{
 	height: 3rem;
 	width: 7.5rem;
 	border-radius: 0.5rem;
-	background-color: #ff5e00;
+	background-image: linear-gradient(#ff6112,#eb522f);
 	text-align: center;
 	padding-top: 0.8rem;
 	box-sizing: border-box;
@@ -130,7 +130,7 @@ body{
 }
 
 .navcolor{
-	background-color: #ff5e00;
+	background-image: linear-gradient(#ff6112,#eb522f);
 	color: white;
 	box-shadow: 0px 0px 7px #9ecaed;
 }
@@ -156,18 +156,21 @@ body{
 }
 
 .card{
-	height: 26rem;
-	width: 20rem;
+	height: 24.5rem;
+	width: 19rem;
 	border-radius: 1rem;
 	position: relative;
 	background-color: white;
-	border: 12px white solid;
+	border: 8px white solid;
 	z-index: 98;
+}
+
+.card:hover{
 	box-shadow: 0px 2px 8px 0px #c7c7c7;
 }
 
 .card img{
-	height: 70%;
+	height: 68%;
 	width: 100%;
 	border-radius: 1rem;
 }
@@ -218,6 +221,7 @@ body{
 	box-sizing: border-box;
 	display: inline-block;
 	border-radius: 0.25rem;
+	font-size: 0.85rem;
 }
 
 .add2cart{
@@ -228,6 +232,7 @@ body{
 	margin-left: 0.5rem;
 	border-radius: 0.25rem;
 	cursor: pointer;
+	font-size: 0.85rem;
 }
 
 /*upload*/
