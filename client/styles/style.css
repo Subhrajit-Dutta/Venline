@@ -5,6 +5,10 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+:root{
+	--primary-color: #39b364;
+}
+
 /*main*/
 
 main{
@@ -150,7 +154,6 @@ nav > div{
 #navigation > div{
 	width: 5rem;
 }
-
 .nav-link{
 	color: black;
 	text-decoration: none;
@@ -160,7 +163,7 @@ nav > div{
 }
 
 .nav-link:hover{
-    color: #39b364;
+    color: var(--primary-color);
 }
 
 #navigation .btn{
@@ -217,7 +220,7 @@ nav > div{
 	left: -8rem;
 	height: 14rem;
 	width: 16rem;
-	background-color: #39b364;
+	background-color: var(--primary-color);
 	align-items: center;
 	border-radius: 0.85rem;
 	display: none;
@@ -300,6 +303,10 @@ section{
 #header h1{
 	font-size: 2rem;
 	font-weight: 500;
+}
+
+#header h1 span{
+	color: var(--primary-color);
 }
 
 #header h3{
@@ -599,7 +606,7 @@ section{
 	font-size: 0.85rem;
 	height: 0.95rem;
 	width: 2.7rem;
-	background-color: #39b364;
+	background-color: var(--primary-color);
 	text-align: center;
 	color: white;
 	border-radius: 0.5rem;
@@ -629,7 +636,7 @@ section{
 
 .price{
 	display: inline-block;
-	background-color: #39b364;
+	background-color: var(--primary-color);
 	color: white;
 	font-weight: 900;
 	padding: 0.5rem;
@@ -694,7 +701,7 @@ section{
 }
 
 .cardcolor{
-    background-color: #39b364;
+    background-color: var(--primary-color);
 	color: white;
 }
 
@@ -754,7 +761,7 @@ section{
 
 #about{
 	margin-top: 7.5rem;
-	background-color: #a2d9ff;
+	background-color: var(--primary-color);
 	width: 100%;
 }
 
