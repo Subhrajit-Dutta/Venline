@@ -518,11 +518,12 @@ input:focus
 
 #footer
 {
+    padding: 1rem;
     margin-top: 100px;
     background-color: #39b364;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+/*    width: 100%;*/
     height: auto;
     justify-content: space-between;
 /*    margin-left: -8px;*/
@@ -537,6 +538,9 @@ input:focus
 
 #div2
 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     height: auto;
     width: 200px;
 }
@@ -545,6 +549,9 @@ input:focus
 {
     height: auto;
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 
@@ -580,7 +587,7 @@ input:focus
     width: 67%;
     height: 30px;
     font-family: sans-serif;
-    font-size: 15px;
+    font-size: 0.85rem;
 }
 
 #email-form:focus
@@ -702,6 +709,7 @@ input:focus
 {
     padding-top: 15px;
     padding-right: 5px;
+    height: 20px;
 }
 
 
