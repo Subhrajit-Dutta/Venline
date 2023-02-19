@@ -508,6 +508,16 @@ section{
 	}
 }
 
+@media screen and (max-width: 620px){
+	#search-bar{
+		width: 85%;
+	}
+
+	#search-bar input{
+        width: 50%;
+	}
+}
+
 /*filter*/
 
 #filter{
@@ -546,7 +556,7 @@ section{
 
 @media screen and (max-width: 1020px){
 	#filter{
-		width: 85%;
+		width: 90%;
 	}
 }
 

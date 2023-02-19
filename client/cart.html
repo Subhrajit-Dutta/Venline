@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cart</title>
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
     <link rel="stylesheet" type="text/css" href="styles/cart.css">
   <script src="https://kit.fontawesome.com/9b7f16bc1d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,12 +83,12 @@
 
               <div class="product-quantity"> 
                 <h3> Quantity</h3>
-                <div class="quantity"> <i class="fa-solid fa-minus minus-icon"></i> 1 <i class="fa-solid fa-plus plus-icon"></i> </div>
+                <div class="quantity"> <button class="btn-arrow decre"><i class="fa-solid fa-minus minus-icon"></i></button> <span>1</span> <button class="btn-arrow incre"><i class="fa-solid fa-plus plus-icon"></i></button> </div>
               </div>
 
               <div class="product-total">
                 <h3>Total</h3>
-                <div class="total"> 40 Rs.</div>
+                <div class="total"> <span>40</span> Rs.</div>
               </div>
 
             </div>
@@ -120,12 +121,12 @@
 
               <div class="product-quantity"> 
                 <h3> Quantity</h3>
-                <div class="quantity"> <i class="fa-solid fa-minus minus-icon"></i> 1 <i class="fa-solid fa-plus plus-icon"></i> </div>
+                <div class="quantity"> <button class="btn-arrow decre"><i class="fa-solid fa-minus minus-icon"></i></button> <span>1</span> <button class="btn-arrow incre"><i class="fa-solid fa-plus plus-icon"></i></button> </div>
               </div>
 
               <div class="product-total">
                 <h3>Total</h3>
-                <div class="total"> 40 Rs.</div>
+                <div class="total"> <span>40</span> Rs.</div>
               </div>
 
             </div>
@@ -157,12 +158,12 @@
 
               <div class="product-quantity"> 
                 <h3> Quantity</h3>
-                <div class="quantity"> <i class="fa-solid fa-minus minus-icon"></i> 1 <i class="fa-solid fa-plus plus-icon"></i> </div>
+                <div class="quantity"> <button class="btn-arrow decre"><i class="fa-solid fa-minus minus-icon"></i></button> <span>1</span> <button class="btn-arrow incre"><i class="fa-solid fa-plus plus-icon"></i></button> </div>
               </div>
 
               <div class="product-total">
                 <h3>Total</h3>
-                <div class="total"> 40 Rs.</div>
+                <div class="total"> <span>40</span> Rs.</div>
               </div>
 
             </div>
@@ -182,12 +183,12 @@
 
             <div class="calculation">
 
-              <div class="reason" style="margin-top: 20px;">Sub-total: </div> <div class="reason" style="margin-top: 20px;"> 120.00 Rs. </div>
+              <div class="reason" style="margin-top: 20px;">Sub-total: </div> <div class="reason" style="margin-top: 20px;"> <span id="subcost">0</span> Rs. </div>
             </div>
 
             <div class="calculation">
               
-              <div class="reason">Delivery: </div> <div class="reason"> 49.00 Rs. </div>
+              <div class="reason">Delivery: </div> <div class="reason"> 00.00 Rs. </div>
 
             </div>
 
@@ -203,12 +204,12 @@
 
             <div class="calculation">
               
-              <div class="total-final">Total: </div> <div class="total-final"> 169.00 Rs. </div>
+              <div id="total-cost" class="total-final">Total: </div> <div class="total-final"> <span id="cost">0</span> Rs. </div>
 
             </div>
 
 
-            <button type="submit" id="order"><i class="fa-solid fa-lock" style="padding-right: 10px;"></i>Checkout</button>
+            <button type="submit" id="order"><i class="fa-solid fa-lock" style="padding-right: 10px; color: white;"></i>Checkout</button>
 
         </div>
 

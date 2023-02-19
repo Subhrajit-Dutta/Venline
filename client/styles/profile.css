@@ -241,23 +241,7 @@ body{
 	height: 20rem;
 }
 
-#upload i{
-	font-size: 6rem;
-	color: #b3b3b3;
-}
 
-#upload button{
-	height: inherit;
-	width: 100%;
-	background-color: white;
-	cursor: pointer;
-	border: none;
-}
-
-#upload h3{
-	color: #646464;
-	font-size: 2rem;
-}
 
 /*edit*/
 
@@ -295,7 +279,7 @@ input{
     font-size: 1.2rem;
 }
 
-input[type="password"] , input[type="email"] , input[type="text"] , input[type="number"]
+input[type="password"] , input[type="email"] , input[type="text"] , input[type="number"] , textarea
 {
 	border: 1.5px solid #BEBFC0;
 	border-radius: 5px;
@@ -303,4 +287,9 @@ input[type="password"] , input[type="email"] , input[type="text"] , input[type="
 	margin-top: -10px;
 	height: 44px;
 	width: 350px;
+}
+
+textarea{
+	font-size: 1.2rem;
+	height: 88px;
 }
