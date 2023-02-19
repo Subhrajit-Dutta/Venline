@@ -1,3 +1,7 @@
+:root{
+	--primary-color: #39b364;
+}
+
 .btn{
 	padding: 0.3rem;
 	transition: 0.25s ease-in-out;
