@@ -316,6 +316,7 @@ nav > div{
     border: 1px solid #696969;
     border-radius: 2px 0px 0px 2px;
 }
+
 input:focus
 {
     outline:none;
@@ -359,6 +360,7 @@ input:focus
     height: 10px;
     border-top: 2px solid #696969;
 }
+
 .total-final
 {
     margin-top: px;
