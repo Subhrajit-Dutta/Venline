@@ -68,6 +68,8 @@ dropProfile.addEventListener('click', function () {
         profile.style.display = 'none';
 });
 
+//user Profile data showing in navbar
+
 const user = JSON.parse(localStorage.getItem('user'));
 const profileCard = `
 <div id="profile-card-img"></div>
