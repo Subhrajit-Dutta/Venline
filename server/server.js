@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, '../client')));
 
 // Route for the index page
 app.get('/', (req, res) => {
-    res.render(path.join(__dirname, '../client', 'index.ejs'),{'name' : ''});
+    res.render(path.join(__dirname, '../client', 'index.ejs'));
 });
 //Register user
 app.use('/api/consumer',userRoutes)
