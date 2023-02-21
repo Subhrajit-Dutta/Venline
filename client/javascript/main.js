@@ -71,14 +71,31 @@ dropProfile.addEventListener('click', function () {
 //user Profile data showing in navbar
 
 const user = JSON.parse(localStorage.getItem('user'));
-const profileCard = `
-<div id="profile-card-img"></div>
+
+// after log in
+
+if(localStorage.getItem('user')){
+    const profileCard = `
+                    <div id="profile-card-img"></div>
                     <div id="profile-card-name"><h4>${user.username}</h4></div>
                     <div id="profile-card-email"><p>${user.email}</p></div>
                     <div>
                         <button type="button" onclick="location.href='profile.html'">Profile Dashboard</button>
-                        <button type="button">Log Out</button>
+                        <button type="button" onclick="logOut()">Log Out</button>
                     </div>
 `;
-document.getElementById('profile-card').innerHTML = profileCard;
-document.getElementById('profile-name').innerHTML = `<h5>${user.username}</h5>`;
+    document.getElementById('profile-card').innerHTML = profileCard;
+    document.getElementById('profile-name').innerHTML = `<h5>${user.username}</h5>`;
+    document.getElementById('login-signup-btn').style.display = 'none';
+    document.getElementById('profile').style.display = 'block';
+}
+
+//log out
+
+function logOut(){
+    localStorage.removeItem('user');
+    document.getElementById('profile-card').innerHTML = ``;
+    document.getElementById('profile-name').innerHTML = ``;
+    document.getElementById('profile').style.display = 'none';
+    document.getElementById('login-signup-btn').style.display = 'block';
+}
