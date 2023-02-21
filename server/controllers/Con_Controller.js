@@ -13,7 +13,7 @@ const registerUser=asyncHandler( async (req,res)=>{
     if (userExists) {
         res.status(400)
         throw new Error("User already Exists");
-        
+
     }
     const user = User.create(
         {
@@ -44,9 +44,10 @@ const registerUser=asyncHandler( async (req,res)=>{
                 _id:user._id,
             username:user.username,
             email:user.email,
-            phone:user.phone,    
+            phone:user.phone,
         //token:generateToken(user._id)
             })
+            res.render(path.join(__dirname, '../client', 'test.ejs'),{'name' : user.username});
             console.log("login Confirmed")
         }
         else
