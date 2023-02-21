@@ -47,3 +47,9 @@ navBoxes[0].addEventListener('click',productsShow);
 navBoxes[1].addEventListener('click',uploadShow);
 navBoxes[2].addEventListener('click',editShow);
 editbtn.addEventListener('click',editShow);
+
+//userdata
+
+const user = JSON.parse(localStorage.getItem('user'));
+
+document.getElementById('name').innerHTML = `<h1>${user.username}</h1>`;

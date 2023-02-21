@@ -14,14 +14,23 @@ window.addEventListener('scroll', checkscroll);
 
 //profile
 
-let dropProfile = document.querySelector('#profile i');
-let profile = document.getElementById('profile-card');
+let dropProfile1 = document.querySelectorAll('.profile i')[0];
+let dropProfile2 = document.querySelectorAll('.profile i')[1];
+let profile1 = document.getElementsByClassName('profile-card')[0];
+let profile2 = document.getElementsByClassName('profile-card')[1];
 
-dropProfile.addEventListener('click', function () {
-    if (profile.style.display == 'none')
-        profile.style.display = 'flex';
+dropProfile1.addEventListener('click', function () {
+    if (profile1.style.display == 'none')
+        profile1.style.display = 'flex';
     else
-        profile.style.display = 'none';
+        profile1.style.display = 'none';
+});
+
+dropProfile2.addEventListener('click', function () {
+    if (profile2.style.display == 'none')
+        profile2.style.display = 'flex';
+    else
+        profile2.style.display = 'none';
 });
 
 //user Profile data showing in navbar
@@ -32,26 +41,43 @@ const user = JSON.parse(localStorage.getItem('user'));
 
 if(localStorage.getItem('user')){
     const profileCard = `
-                    <div id="profile-card-img"><img src="images/dp.jpg"></div>
-                    <div id="profile-card-name"><h4>${user.username}</h4></div>
+                    <div class="profile-card-img"><img src="images/dp.jpg"></div>
+                    <div class="profile-card-name"><h4>${user.username}</h4></div>
                     <div id="profile-card-email"><p>${user.email}</p></div>
                     <div>
                         <button type="button" onclick="location.href='profile'">Profile Dashboard</button>
                         <button type="button" onclick="logOut()">Log Out</button>
                     </div>
 `;
-    document.getElementById('profile-card').innerHTML = profileCard;
-    document.getElementById('profile-name').innerHTML = `<p>${user.username}</p>`;
-    document.getElementById('login-signup-btn').style.display = 'none';
-    document.getElementById('profile').style.display = 'block';
+    document.getElementsByClassName('profile-card')[0].innerHTML = profileCard;
+    document.getElementsByClassName('profile-name')[0].innerHTML = `<p>${user.username}</p>`;
+    document.getElementsByClassName('profile-card')[1].innerHTML = profileCard;
+    document.getElementsByClassName('profile-name')[1].innerHTML = `<p>${user.username}</p>`;
+    document.getElementsByClassName('login-signup-btn')[0].style.display = 'none';
+    document.getElementsByClassName('profile')[0].style.display = 'block';
+    document.getElementsByClassName('login-signup-btn')[1].style.display = 'none';
+    document.getElementsByClassName('profile')[1].style.display = 'block';
 }
 
 //log out
 
 function logOut(){
     localStorage.removeItem('user');
-    document.getElementById('profile-card').innerHTML = ``;
-    document.getElementById('profile-name').innerHTML = ``;
-    document.getElementById('profile').style.display = 'none';
-    document.getElementById('login-signup-btn').style.display = 'block';
+    document.getElementsByClassName('profile-card')[0].innerHTML = ``;
+    document.getElementsByClassName('profile-name')[0].innerHTML = ``;
+    document.getElementsByClassName('profile')[0].style.display = 'none';
+    document.getElementsByClassName('login-signup-btn')[0].style.display = 'block';
+    document.getElementsByClassName('profile-card')[1].innerHTML = ``;
+    document.getElementsByClassName('profile-name')[1].innerHTML = ``;
+    document.getElementsByClassName('profile')[1].style.display = 'none';
+    document.getElementsByClassName('login-signup-btn')[1].style.display = 'block';
+}
+
+//hamberger
+
+function showHam(){
+    if(document.getElementById('hamberger-body').style.display == 'none')
+        document.getElementById('hamberger-body').style.display = 'flex';
+    else
+        document.getElementById('hamberger-body').style.display = 'none';
 }
