@@ -7,7 +7,7 @@ body{
   display: none;
 }
 
-#profile{
+#profile-page{
 	max-width: 1500px;
 	margin: auto;
 }
@@ -73,6 +73,10 @@ body{
 	box-sizing: border-box;
 	margin-top: 3.5rem;
 	cursor: pointer;
+}
+
+#edit i{
+	color: white;
 }
 
 #edit:hover{
