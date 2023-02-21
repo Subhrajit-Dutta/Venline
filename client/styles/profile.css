@@ -242,10 +242,8 @@ body{
 /*upload*/
 
 #upload{
-	height: 20rem;
+	height: auto;
 }
-
-
 
 /*edit*/
 

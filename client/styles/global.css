@@ -34,6 +34,7 @@ i{
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
+	align-items: center;
 	padding: 1.5rem;
 	padding-top: 1rem;
 	box-sizing: border-box;
@@ -92,10 +93,9 @@ nav > div{
 	color: black;
 }
 
-#profile{
+.profile{
 	width: auto !important;
 	margin-left: 1rem;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 0.5rem;
@@ -103,29 +103,33 @@ nav > div{
 	display: none;
 }
 
-#profile-img{
+.profile-img{
 	height: 35px;
 	width: 35px;
 	display: inline-block;
 }
 
-#profile-img img{
+.profile-img img{
 	height: inherit;
 	width: inherit;
 	border-radius: 50%;
 }
 
-#profile-name{
+.profile-name{
 	display: inline-block;
 }
 
-#profile i{
+.white{
+	color: white;
+}
+
+.profile i{
 	position: relative;
-	top: 2px;
+	top: 1px;
 	cursor: pointer;
 }
 
-#profile-card{
+.profile-card{
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -139,19 +143,19 @@ nav > div{
 	display: none;
 }
 
-#profile-card-img{
+.profile-card-img{
 	height: 70px;
 	width: 70px;
 	margin-top: 2rem;
 }
 
-#profile-card-img img{
+.profile-card-img img{
 	height: inherit !important;
 	width: inherit !important;
 	border-radius: 50%;
 }
 
-#profile-card h4{
+.profile-card h4{
 	margin: 0;
 	margin-top: 0.75rem;
 	font-size: 1.05rem;
@@ -161,13 +165,13 @@ nav > div{
 	margin-bottom: 0.25rem;
 }
 
-#profile-card p{
+.profile-card p{
 	margin: 0;
 	font-size: 0.8rem;
 	color: white;
 }
 
-#profile-card button[type="button"]{
+.profile-card button[type="button"]{
 	padding: 0.5rem;
 	font-size: 0.9rem;
 	margin-top: 0.8rem;
@@ -179,13 +183,84 @@ nav > div{
 	border: none;
 }
 
-#profile-card button[type="button"]:hover{
+.profile-card button[type="button"]:hover{
 	box-shadow: 0px 2px 8px 0px #c7c7c7;
+}
+
+#hamberger{
+    margin-right: 0.5rem;
+    position: relative;
+    bottom: 3px;
+    display: none;
+}
+
+#hamberger-icon{
+	background-color: transparent;
+	border: none;
+	font-size: 1.5rem;
+}
+
+.ham-link{
+	font-size: 1rem;
+	color: white;
+	text-decoration: none;
+}
+
+.hamicon i{
+	color: white;
+}
+
+.hamicon{
+	font-size: 1rem;
+}
+
+.hamicon span{
+	color: white;
+	color: white;
+	text-decoration: none;
+}
+
+.hamicon a{
+	text-decoration: none;
+}
+
+#hamberger-body{
+	position: absolute;
+	top: 2rem;
+	left: -8rem;
+	background-color: var(--primary-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 20rem;
+	width: 9rem;
+	align-items: flex-start;
+	padding-left: 1.5rem;
+	border-radius: 0.75rem;
+	transition: 0.45s;
+	display: none;
+}
+
+#hamberger-body .btn{
+	padding: 0.5rem;
+	font-size: 0.9rem;
+	background-color: #8ec792;
+	font-weight: 500;
+	border-radius: 0.5rem;
+	color: #ebebeb;
+	outline: none;
+	border: none;
+	box-shadow: none;
+	width: 70%;
 }
 
 @media screen and (max-width: 810px){
 	#navigation{
 		display: none;
+	}
+
+	#hamberger{
+		display: flex;
 	}
 }
 
