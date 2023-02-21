@@ -188,6 +188,7 @@ nav > div{
 	align-items: center;
 	gap: 0.5rem;
 	position: relative;
+	display: none;
 }
 
 #profile-img{
