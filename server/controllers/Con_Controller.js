@@ -47,7 +47,6 @@ const registerUser=asyncHandler( async (req,res)=>{
             phone:user.phone,
         //token:generateToken(user._id)
             })
-            res.render(path.join(__dirname, '../client', 'test.ejs'),{'name' : user.username});
             console.log("login Confirmed")
         }
         else
