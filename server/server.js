@@ -21,9 +21,15 @@ app.set('views',path.join(__dirname,'../client'));
 // Set static folder
 app.use(express.static(path.join(__dirname, '../client')));
 
-// Route for the index page
+// Route for the pages
 app.get('/', (req, res) => {
     res.render(path.join(__dirname, '../client', 'index.ejs'));
+});
+app.get('/cart', (req, res) => {
+    res.render(path.join(__dirname, '../client', 'cart.ejs'));
+});
+app.get('/profile', (req, res) => {
+    res.render(path.join(__dirname, '../client', 'profile.ejs'));
 });
 //Register user
 app.use('/api/consumer',userRoutes)
