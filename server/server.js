@@ -31,6 +31,12 @@ app.get('/cart', (req, res) => {
 app.get('/profile', (req, res) => {
     res.render(path.join(__dirname, '../client', 'profile.ejs'));
 });
+app.get('/order-confirmation', (req, res) => {
+    res.render(path.join(__dirname, '../client', 'order-confirmation.ejs'));
+});
+app.get('/checkout', (req, res) => {
+    res.render(path.join(__dirname, '../client', 'checkout.ejs'));
+});
 //Register user
 app.use('/api/consumer',userRoutes)
 //middlewares for error Handling

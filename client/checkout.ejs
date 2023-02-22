@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <link rel="stylesheet" type="text/css" href="styles/checkout.css">
+    <script src="https://kit.fontawesome.com/9b7f16bc1d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div id="logo">
+      <img src="images/vinlinedark.png" height="50px" width="200px">
+    </div>
+    <div id="parent">
+      <div id="left">
+
+        <h3 style="margin-bottom: -1px;">Delivery Details</h3>
+
+        <label for = "name" id="name-label"> Full name </label> <br>
+        <input type="text" name="name" required id="name-form"><br>
+
+        <label for = "phn" id="phn-label"> Mobile number </label> <br>
+        <input type="text" name="phn" required id="phn-form"><br>
+
+        <label for = "address1" id="address1-label">Address Line 1. </label> <br>
+        <input type="text" name="address1" required id="address1-form"><br>
+
+        <label for = "address2" id="address2-label">Address Line 2. </label> <br>
+        <input type="text" name="address2" required id="address2-form"><br>
+
+        <label for = "area" id="area-label">Area </label> <br>
+        <input type="text" name="area" required id="area-form"><br>
+
+        <label for = "landmark" id="landmark-label">Landmark</label> <br>
+        <input type="text" name="landmark" required id="landmark-form"><br>
+
+        <label for = "town/city" id="town/city-label">Town/City</label> <br>
+        <input type="text" name="town/city" required id="town/city-form"><br>
+
+        <div id="container">
+          <div id="state">
+            <label for = "state" id="state-label">State</label><br>
+            <form name="state">  
+              <select>  
+                <option>-----Select Your State-----</option>  
+                <option value="yellow">Violet</option>  
+                <option value="white">Blue</option>  
+                <option value="black">Black</option>  
+                <option value="green">green</option>  
+                <option value="red">Red</option>  
+              </select>  
+            </form>
+          </div>
+
+          <div id="pin-code">
+            <label for = "pincode" id="pincode-label">Pincode </label> <br>
+            <input type="text" name="pincode" required id="pincode-form"><br>
+          </div>
+        </div>
+
+
+        <h3>Payment Method</h3>
+          <form>
+            <input type="radio"> <span style="color: #696969; font-family: sans-serif; font-size: 15px;"> Cash on Delivery </span><br>
+          </form>
+
+          <button type="submit" id="order">Place Order</button>
+
+      </div>
+
+
+
+
+      <div id="right">
+
+        <h3> <i class="fa-solid fa-cart-shopping"></i> Cart Summary<span style="margin-left: 3px">(</span><a href="cart.html">edit</a><span>)</span></h3>
+        
+        <div class="product">
+
+          <span class="quantity">1</span><span style="margin-left: 3px;">×</span> <span class="name">Example Name</span><span class="price">Rs. 120</span><br>
+
+          <div class="description">Loreum Ipsum</div>
+
+          <div class="seperation-line"></div>
+        </div>
+
+        <div class="product">
+
+          <span class="quantity">1</span><span style="margin-left: 3px;">×</span> <span class="name">Example Name</span><span class="price">Rs. 120</span><br>
+
+          <div class="description">Loreum Ipsum</div>
+
+          <div class="seperation-line"></div>
+        </div>
+
+        <div class="product">
+
+          <span class="quantity">1</span><span style="margin-left: 3px;">×</span> <span class="name">Example Name</span><span class="price">Rs. 120</span><br>
+
+          <div class="description">Loreum Ipsum</div>
+
+          <div class="seperation-line"></div>
+        </div>
+
+        <div id="total">Total:<span>Rs. 120</span></div>
+      </div>
+
+    </div>
+    <%- inlcude('include/footer') %>
+    <script type="text/javascript" src="checkout.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
