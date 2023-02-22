@@ -1,4 +1,11 @@
+
 body
+{
+	margin: auto;
+	margin: 0;
+}
+
+main
 {
 	width: 75%;
 	margin: auto;
@@ -41,6 +48,7 @@ body
 	height: auto;
 	border-top: 2px solid #E1E1E1;
 	border-bottom: 2px solid #E1E1E1;
+	margin-bottom: 30px;
 }
 
 #left

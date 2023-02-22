@@ -1,3 +1,9 @@
+
+body
+{
+	margin: 0;
+}
+
 #parent
 {
 	margin: auto;
@@ -10,6 +16,8 @@
 	border-radius: 3px;
 	background-color: #F5F5F5;
 	align-items: flex-start;
+	margin-bottom: 30px;
+
 }
 
 /*-----Payment-----*/
@@ -123,11 +131,10 @@ input:focus {
 	margin-top: 96px;
 	background-color: white;
 	width: 400px;
-/*	width: 40%;*/
-/*	height: 285px;*/
 	height: auto;
 	border: 1.5px solid #E1E1E1;
 	border-radius: 4px;
+	padding-bottom: 20px;
 }
 
 #right h3
