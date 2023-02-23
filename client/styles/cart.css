@@ -385,6 +385,7 @@ input:focus
     border-radius: 5px;
     color: white;
     transition: 0.3s ease-out;
+    cursor: pointer;
 }
 
 #order:hover
