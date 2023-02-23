@@ -53,7 +53,7 @@ const successfulLookup = (position) => {
     .then(data => {
         localStorage.setItem('city', (data.results[0].components.city));
         const cityName = localStorage.getItem('city');    
-        city.value = `${cityName}`;
+        city.innerHTML = `${cityName}`;
     });
 }
 
