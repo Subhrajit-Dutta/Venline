@@ -31,6 +31,9 @@ app.get('/cart', (req, res) => {
 app.get('/profile', (req, res) => {
     res.render(path.join(__dirname, '../client', 'profile.ejs'));
 });
+app.get('/profile-seller', (req, res) => {
+    res.render(path.join(__dirname, '../client', 'profile-seller.ejs'));
+});
 app.get('/order-confirmation', (req, res) => {
     res.render(path.join(__dirname, '../client', 'order-confirmation.ejs'));
 });
