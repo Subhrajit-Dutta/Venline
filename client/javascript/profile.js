@@ -52,9 +52,6 @@ editbtn.addEventListener('click',editShow);
 
 let user = JSON.parse(localStorage.getItem('user'));
 
-console.log(localStorage.getItem('user'));
-
-
 document.getElementById('name').innerHTML = `<h1>${user.username}</h1>`;
 
 //edit profile
@@ -78,3 +75,29 @@ function saveChanges(event){
 }
 
 saveBtn.addEventListener('click',saveChanges);
+
+//location detection
+
+const box = document.getElementById('arrow-downBox')
+
+const city = document.getElementById('city');
+
+const successfulLookup = (position) => {
+    const { latitude, longitude } = position.coords;
+    fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=6fb98deaf8b54d719c0330a5a44a6ac3`)
+    .then(response => response.json())
+    .then(data => {
+        localStorage.setItem('city', (data.results[0].components.city));
+        const cityName = localStorage.getItem('city');    
+        city.value = `${cityName}`;
+    });
+}
+
+box.addEventListener('click',function(){  
+    navigator.geolocation.getCurrentPosition(successfulLookup, console.log);
+});
+
+if(localStorage.getItem('city') != null){
+    const cityName = localStorage.getItem('city');    
+    city.innerHTML = `${cityName}`;
+}
