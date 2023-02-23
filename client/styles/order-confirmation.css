@@ -117,11 +117,13 @@ main
 
 #cancel
 {
+
 	width: 50%;
 }
 
 #cancel-button
 {
+    cursor: pointer;
 	margin-top: 40px;
 	margin-left: 10px;
 	border-radius: 5px;
@@ -141,6 +143,8 @@ main
 
 #continue-shopping-button
 {
+    cursor: pointer;
+	
 	font-size: 90%;
     font-weight: 600;
 	background-color: #39b364;
