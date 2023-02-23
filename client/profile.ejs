@@ -5,21 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Profile</title>
 	<script src="https://kit.fontawesome.com/9b7f16bc1d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
 	<link rel="stylesheet" type="text/css" href="styles/profile.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="profile">
+
+    <div id="profile-page">
     	<div id="header">
     		<div id="img">
-    		    <img src="images/self.png">
+    		    <img src="images/dp.jpg">
     		</div>
 
     		<div id="details">
 
-    			<div id="name"><h1>Niladri Adhikary</h1></div>
+    			<div id="name"><h1></h1></div>
 
     			<div id="location"><i style="color: red;" class="fa-solid fa-location-dot"></i> Kolkata</div>
 
@@ -131,6 +133,9 @@
             </form>
     	</div>
     </div>
+
+    <%- include('include/footer') %>
+    
   <script type="text/javascript" src="javascript/profile.js"></script>  
 </body>
 </html>
