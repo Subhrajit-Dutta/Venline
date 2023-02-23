@@ -50,6 +50,54 @@ editbtn.addEventListener('click',editShow);
 
 //userdata
 
-const user = JSON.parse(localStorage.getItem('user'));
+let user = JSON.parse(localStorage.getItem('user'));
 
 document.getElementById('name').innerHTML = `<h1>${user.username}</h1>`;
+
+//edit profile
+
+const nameEdit = document.getElementById('name-edit');
+const phoneEdit = document.getElementById('phone-edit');
+const emailEdit = document.getElementById('email-edit');
+
+nameEdit.value = `${user.username}`;
+phoneEdit.value = `${user.phone}`;
+emailEdit.value = `${user.email}`;
+
+
+const saveBtn = document.getElementById('save');
+
+function saveChanges(event){
+	event.preventDefault();
+	user.username = nameEdit.value;
+	const userUpdated = JSON.stringify(user);
+	localStorage.setItem('user',userUpdated);
+}
+
+saveBtn.addEventListener('click',saveChanges);
+
+//location detection
+
+const box = document.getElementById('arrow-downBox')
+
+const city = document.getElementById('city');
+
+const successfulLookup = (position) => {
+    const { latitude, longitude } = position.coords;
+    fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=6fb98deaf8b54d719c0330a5a44a6ac3`)
+    .then(response => response.json())
+    .then(data => {
+        localStorage.setItem('city', (data.results[0].components.city));
+        const cityName = localStorage.getItem('city');    
+        city.value = `${cityName}`;
+    });
+}
+
+box.addEventListener('click',function(){  
+    navigator.geolocation.getCurrentPosition(successfulLookup, console.log);
+});
+
+if(localStorage.getItem('city') != null){
+    const cityName = localStorage.getItem('city');    
+    city.innerHTML = `${cityName}`;
+}

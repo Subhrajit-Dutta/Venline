@@ -20,11 +20,12 @@ body{
 	background-image: url(../images/cover.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: bottom;
 	background-attachment: fixed;
 	color: white;
 	width: 80%;
 	margin: auto;
+	box-shadow: 0px 2px 5px 0px #c7c7c7;
 }
 
 #img{
@@ -148,7 +149,7 @@ body{
 }
 
 .show{
-	display: block;
+	display: flex;
 }
 
 #cards{
@@ -243,6 +244,66 @@ body{
 
 #upload{
 	height: auto;
+	gap: 3rem;
+	background-color: white;
+	color: black;
+	overflow: hidden;
+	padding: 0.01rem;
+}
+
+#upload img{
+	position: relative;
+	bottom: 50px;
+}
+
+#upload-btn{
+
+}
+
+#location-input{
+	padding-bottom: 0.5rem;
+}
+
+#city{
+	margin-bottom: 2rem;
+}
+
+#citylabel{
+	margin-top: 1.5rem;
+}
+
+/*location*/
+
+#arrow-downBox{
+	height: 5rem;
+	width: 21rem;
+	overflow-y: scroll;
+	box-shadow: 0px 2px 8px 0px #c7c7c7;
+	background-color: white;
+	border-radius: 0.8rem;
+	z-index: 99;
+	border: 1px solid #f1f1f1;
+	padding: 0.65rem;
+}
+
+#arrow-downBox:hover{
+	background-color: #f8f8f8;
+}
+
+#detect{
+	display: flex;
+	flex-direction: row;
+	font-size: 1.1rem;
+	align-items: center;
+	gap: 1rem;
+	color: red;
+	font-weight: 200;
+}
+
+#arrow-downBox > p{
+	margin-top: -0.75rem;
+	margin-left: 2.2rem;
+	font-size: 0.85rem;
 }
 
 /*edit*/
@@ -254,13 +315,13 @@ body{
 
 .inputs{
 	margin-top: 2rem;
+	position: relative;
 }
 
 .inputs button{
 	height: 2.5rem;
 	width: 9rem;
 	border-radius: 0.5rem;
-	background-color: #ff5e00;
 	text-align: center;
 	color: white;
 	font-size: 1rem;
@@ -268,7 +329,8 @@ body{
 	margin-bottom: 3rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	background-color: #39b364;
+	background-color: var(--primary-color);
+	color: white;
 }
 
 label{
@@ -284,14 +346,19 @@ input{
 input[type="password"] , input[type="email"] , input[type="text"] , input[type="number"] , textarea
 {
 	border: 1.5px solid #BEBFC0;
-	border-radius: 5px;
+	background-color: transparent;
+	border: none;
 	color: #585C65;
 	margin-top: -10px;
 	height: 44px;
 	width: 350px;
+	border-bottom: 2px solid black;
+	color: black;
+  outline: none;
+  font-size: 0.95rem;
 }
 
 textarea{
-	font-size: 1.2rem;
+	font-size: 0.95rem;
 	height: 88px;
 }

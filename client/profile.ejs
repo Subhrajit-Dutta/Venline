@@ -85,7 +85,7 @@
                 <h1>UPLOAD PRODUCT</h1>
                 <div class="inputs">
                     <label for="productname">Name of Product</label><br>
-                    <input type="text" name="productname" id="productname">
+                    <input type="text" name="productname" id="productname" required>
                 </div>
 
                 <div class="inputs">
@@ -93,33 +93,41 @@
                     <textarea name="description" id="description"></textarea>
                 </div>
 
-                <div class="inputs">
-                    <label for="location">Location</label><br>
-                    <input type="text" name="location" id="location">
+                <div class="inputs" id="location-input">
+                    <label for="city" id="citylabel">Location : </label><br>
+                    <input type="text" name="city" id="city" disabled required>
+                    <div id="arrow-downBox">
+                        <div id="detect">
+                            <i class="fa-solid fa-location-crosshairs" style="color: red !important;"></i>
+                            <p>Detect Your Current Location</p>
+                        </div>
+                        <p>Using GPS</p>
+                    </div>
                 </div>
 
-                <div class="inputs">
+                <div class="inputs" id="upload-btn">
                     <button type="submit">Upload</button>
-                </div>
+               </div>
             </form>
+            <img src="images/upload.png" height="750px" width="750px">
     	</div>
 
     	<div class="box" id="editProducts">
     		<form>
     			<h1>EDIT PROFILE</h1>
     			<div class="inputs">
-    		        <label for="name">Name</label><br>
-    		        <input type="text" name="name" id="name" value="Niladri Adhikary">
+    		        <label for="name-edit">Name</label><br>
+    		        <input type="text" name="name" id="name-edit">
     		    </div>
 
     		    <div class="inputs">
-    		        <label for="phone">Phone</label><br>
-    		        <input type="number" name="phone" id="phone" value="7001599126">
+    		        <label for="phone-edit">Phone</label><br>
+    		        <input type="number" name="phone" id="phone-edit">
     		    </div>
 
     		    <div class="inputs">
-    		        <label for="email">Email</label><br>
-    		        <input type="email" name="email" id="email" value="niladri@gmail.com">
+    		        <label for="email-edit">Email</label><br>
+    		        <input type="email" name="email" id="email-edit">
     		    </div>
 
     		    <div class="inputs">
@@ -128,7 +136,7 @@
     		    </div>
 
     		    <div class="inputs">
-    		        <button type="submit">Save Changes</button>
+    		        <button type="submit" id="save">Save Changes</button>
     		    </div>
             </form>
     	</div>
