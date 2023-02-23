@@ -53,14 +53,20 @@
       <div id="search-main">
         <div id="search-bar">
             <div id="location">
-                <i class="fa-solid fa-location-dot"></i>Kolkata
+                <i class="fa-solid fa-location-dot"></i><span id="city">Kolkata </span>
             </div>
             <div id="search-side">
                 <span id="drop-icon"><button class="btn-arrow"><i class="fa-solid fa-caret-down"></i></button></span>
                 <span id="search-divider">|</span>
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" placeholder="Search for food items...">
-                <div id="arrow-downBox"></div>
+                <div id="arrow-downBox">
+                    <div id="detect">
+                        <i class="fa-solid fa-location-crosshairs" style="color: red !important;"></i>
+                        <p>Detect Your Current Location</p>
+                    </div>
+                    <p>Using GPS</p>
+                </div>
             </div>
         </div>
         <div id="filter">

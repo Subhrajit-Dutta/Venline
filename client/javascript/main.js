@@ -41,3 +41,27 @@ arrow_down.addEventListener('click', function (event) {
     else
         arrow_box.style.display = 'none';
 });
+
+//location detection
+
+const city = document.getElementById('city');
+
+const successfulLookup = (position) => {
+    const { latitude, longitude } = position.coords;
+    fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=6fb98deaf8b54d719c0330a5a44a6ac3`)
+    .then(response => response.json())
+    .then(data => {
+        localStorage.setItem('city', (data.results[0].components.city));
+        const cityName = localStorage.getItem('city');    
+        city.innerHTML = `${cityName}`;
+    });
+}
+
+arrow_box.addEventListener('click',function(){  
+    navigator.geolocation.getCurrentPosition(successfulLookup, console.log);
+});
+
+if(localStorage.getItem('city') != null){
+    const cityName = localStorage.getItem('city');    
+    city.innerHTML = `${cityName}`;
+}
