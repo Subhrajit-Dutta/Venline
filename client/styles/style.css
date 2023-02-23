@@ -351,7 +351,7 @@ section{
 	left: 0;
 	border: 1px solid #f1f1f1;
 	padding: 0.65rem;
-/*	display: none;*/
+	display: none;
 }
 
 #arrow-downBox:hover{
