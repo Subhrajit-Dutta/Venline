@@ -131,6 +131,33 @@ main
 	background-color: white;
 }
 
+#continue-shopping
+{
+	display: flex;
+	margin-top: 30px;
+	width: 99%;
+	margin-bottom: 4px;
+}
+
+#continue-shopping-button
+{
+	font-size: 90%;
+    font-weight: 600;
+	background-color: #39b364;
+    border: 1.5px solid #BEBFC0;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s ease-out;
+    height: 44px;
+	width: 50%;
+	margin: auto;
+	
+}
+
+#continue-shopping-button:hover
+{
+	background-color: #377E49;;
+}
 /*-----order summary-----*/
 
 #right
@@ -234,7 +261,7 @@ main
 		height: auto;
 		width: 60%;
 	}
-    body
+    main
     {
     	width: 85%;
     }
@@ -249,7 +276,7 @@ main
 		height: auto;
 		width: 70%;
 	}
-    body
+    main
     {
     	width: 90%;
     }
@@ -263,7 +290,7 @@ main
 		height: auto;
 		width: 80%;
 	}
-    body
+    main
     {
     	width: 95%;
     }
