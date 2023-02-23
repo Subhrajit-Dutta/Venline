@@ -68,7 +68,6 @@ nav > div{
 	width: 5rem;
 }
 .nav-link{
-	color: black;
 	text-decoration: none;
 	transition: 0.25s ease-in-out;
 	color: #696969;
@@ -92,6 +91,44 @@ nav > div{
 .navicon i{
 	color: black;
 }
+
+.dropdown 
+{
+  	cursor: pointer;
+}
+
+.dropdown-content 
+{
+	border-radius: 10px;
+	margin-top: 6px;
+  	display: none;
+  	background-color: var(--primary-color);
+  	width: auto;
+  	box-shadow: 0px 3px 10px 0px grey;
+  	padding: 1px;
+}
+
+.dropdown-content p
+{
+	font-size: 14px;
+	padding-top: 8px;
+	padding-bottom: 7px;
+	color: white;
+}
+
+.dropdown-content p:hover
+{
+	background-color: #4A7C4E;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+
+.dropdown:hover #hamberger-body {
+  height: 25rem;
+}
+
 
 .profile{
 	width: auto !important;
@@ -418,7 +455,7 @@ nav > div{
 #content
 {
     margin-top: 7px;
-    font-size: 15px;
+    font-size: 14px;
     font-family: sans-serif;
     color: white;
     font-weight: 100;
@@ -451,7 +488,6 @@ nav > div{
     #div5
     {
         margin-top: 25px;
-        margin: auto;
     }
 }
 
