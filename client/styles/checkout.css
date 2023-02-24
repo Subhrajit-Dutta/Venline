@@ -136,6 +136,7 @@ input:focus {
 	border: 1.5px solid #E1E1E1;
 	border-radius: 4px;
 	padding-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 #right h3
