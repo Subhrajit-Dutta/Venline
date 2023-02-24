@@ -5,7 +5,9 @@ const{ createProduct}=require('../controllers/product_controller')
 
 // Create a new seller
 router.post('/seller', createSeller);
+//authenticate seller
 router.post('/seller/login', authseller);
+//uploading product
 router.post('/seller/upload', createProduct);
 
 module.exports = router;
