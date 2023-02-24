@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+const bcrypt = require('bcryptjs');
 const sellerSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -14,26 +14,6 @@ const sellerSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  products: [
-    {
-      name: {
-        type: String,
-        required: true
-      },
-      description: {
-        type: String,
-        required: true
-      },
-      image: {
-        type: String,
-        required: true
-      },
-      price: {
-        type: Number,
-        required: true
-      }
-    }
-  ]
 });
 
 // Hash seller password before saving
@@ -49,7 +29,7 @@ sellerSchema.pre('save', async function(next) {
   });
   
   // Compare password for login
-  sellerSchema.methods.comparePassword = async function(password) {
+  sellerSchema.methods.matchPassword = async function(password) {
     try {
       return await bcrypt.compare(password, this.password);
     } catch (error) {
