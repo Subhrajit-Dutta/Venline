@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta username="viewport" content="width=device-width, initial-scale=1">
     <title>Signup-seller </title>
     <link rel="stylesheet" type="text/css" href="styles/signup-seller.css">
     <script src="https://kit.fontawesome.com/6ae7890451.js" crossorigin="anonymous"></script>
@@ -26,34 +26,27 @@
 
            <div id="inputs">
             <form method="post" action="/api/seller" id="signup-seller-form">
-            <div class="input">
-            <label for = "name" id="name-label"> Name* </label><br>
-            <input type="text" name="name" required id="name">
-            </div>
 
-            <div class="input">
-            <label for = "adhar" id="adhar-label"> Aadhaar No.* </label><br>
-            <input type="number" name="adhar" required id="adhar"><br>
-            </div>
-
-            <div class="input">
-            <label for = "email" id="email-label"> Email* </label><br>
-            <input type="email" name="email" required id="email"><br>
-            </div>
-
-            <div class="input">
-            <label for = "phn" id="phn-label"> Phone No.* </label><br>
-            <input type="number" name="phn" required id="phn">
-            </div>
-
-            <div class="input pass">
-            <label for = "password" id="password-label"> Password* </label><br>
-            <input type="password" name="password" required id="password"><br>
-            </div>
-            </form>
+              <label for = "username" id="username-label"> Name </label> <br>
+              <input type="text" username="username" id="username"><br>
+    
+    
+              <label for = "email" id="email-label"> Email* </label> <br>
+              <input type="email" username="email" required id="email"><br>
+    
+    
+    
+              <label for = "password" id="password-label"> Password* </label> <br>
+              <input class="password" type="password" username="password" required id="password"><br>
+              <!-- <i class="show fa-solid fa-eye"></i>
+              <i class="hide fa-solid fa-eye-slash"></i> -->
+    
+    
+              <button class="sub-btn" type="submit" id="submit" >Create account</button>
+    
+              </form>
            </div>
 
-          <button class="sub-btn" type="submit" id="submit">Create account</button>
 
           <div id="login-link">
             Already have an account? <a href="login-seller.html">Log in</a>
@@ -78,7 +71,7 @@
       </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+  <script src="./javascript/signup-seller.js"></script>
   </body>
 
 
