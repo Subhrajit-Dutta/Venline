@@ -74,6 +74,10 @@ nav > div{
     font-weight: 500
 }
 
+#nav-seller{
+	width: 9rem !important;
+}
+
 .nav-link:hover{
     color: var(--primary-color);
 }
@@ -99,26 +103,28 @@ nav > div{
 
 .dropdown-content 
 {
-	border-radius: 10px;
+/*	border-radius: 10px;*/
 	margin-top: 6px;
   	display: none;
   	background-color: var(--primary-color);
   	width: auto;
   	box-shadow: 0px 3px 10px 0px grey;
-  	padding: 1px;
+  	padding: 5px;
 }
 
 .dropdown-content p
 {
-	font-size: 14px;
+	font-size: 17px;
 	padding-top: 8px;
 	padding-bottom: 7px;
 	color: white;
+	margin: 0;
+	padding: 1.2rem;
 }
 
 .dropdown-content p:hover
 {
-	background-color: #4A7C4E;
+	background-color: #60a365;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -291,7 +297,7 @@ nav > div{
 	width: 70%;
 }
 
-@media screen and (max-width: 810px){
+@media screen and (max-width: 860px){
 	#navigation{
 		display: none;
 	}
