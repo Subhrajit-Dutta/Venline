@@ -25,7 +25,7 @@
           <h1 id="signup-heading">Create your account</h1>
 
            <div id="inputs">
-            
+            <form method="post" action="/api/seller" id="signup-seller-form">
             <div class="input">
             <label for = "name" id="name-label"> Name* </label><br>
             <input type="text" name="name" required id="name">
@@ -42,14 +42,15 @@
             </div>
 
             <div class="input">
-            <label for = "phn" id="phn-label"> Phone No.* </label><br>               <input type="number" name="phn" required id="phn">
+            <label for = "phn" id="phn-label"> Phone No.* </label><br>
+            <input type="number" name="phn" required id="phn">
             </div>
 
             <div class="input pass">
             <label for = "password" id="password-label"> Password* </label><br>
             <input type="password" name="password" required id="password"><br>
             </div>
-
+            </form>
            </div>
 
           <button class="sub-btn" type="submit" id="submit">Create account</button>
