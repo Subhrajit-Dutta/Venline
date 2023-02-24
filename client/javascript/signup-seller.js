@@ -9,7 +9,6 @@ form.addEventListener('submit',function(event){
     const user = {
         username,
         password,
-        phone,
         email,
     }
     fetch('/api/seller', {
