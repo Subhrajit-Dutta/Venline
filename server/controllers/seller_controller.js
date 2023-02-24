@@ -3,10 +3,10 @@ const Seller = require('../models/SellerModel');
 
 // Create a new seller
 const createSeller = asyncHandler(async (req, res) => {
-  const { name, email, password,} = req.body;
+  const { username, email, password,} = req.body;
 
   const seller = new Seller({
-    name,
+    username,
     email,
     password,
   });
@@ -21,7 +21,7 @@ const createSeller = asyncHandler(async (req, res) => {
    if (seller && (await seller.matchPassword(password))) {
      res.json({
        _id: seller._id,
-       name: seller.name,
+       username: seller.username,
        email: seller.email,
      });
    } else {
