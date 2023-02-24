@@ -58,7 +58,7 @@ label
 	position: relative;
 }
 
-#inputs{
+#inputs form{
 	display: flex;
 	flex-wrap: wrap;
 	width: 75%;

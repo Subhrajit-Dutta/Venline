@@ -1,4 +1,4 @@
-const form= document.getElementById('login-form')
+const form= document.getElementById('login-seller-form')
 form.addEventListener('submit',function(event){
     event.preventDefault()
     const formData = new FormData(form)
@@ -8,7 +8,7 @@ form.addEventListener('submit',function(event){
         password,
         email,
     }
-    fetch('/api/consumer/login', {
+    fetch('/api/seller/login', {
         method: 'POST',
         body: JSON.stringify(user),
         headers: {
