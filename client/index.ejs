@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venline</title>
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles/global.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-	<script src="https://kit.fontawesome.com/9b7f16bc1d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9b7f16bc1d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -20,15 +21,9 @@
     </div>
     <div class="back-animation">
     </div>
-    <!-- <div class="back-animation">
-        <img src="images/grapes.png" alt="tomato" height="245px" width="245px">
-    </div>
- -->
-    <!-- Navbar -->
   <main>
-    
-    <%- include('include/navbar') %>
 
+    <%- include('include/navbar') %>
     <section id="header">
         <div id="header-text">
             <h1>Get Food At Your Door Step At <span>Lowest Price</span>!</h1>
@@ -36,7 +31,7 @@
             <button onclick="location.href='#search'">Search Items</button>
         </div>
         <div id="header-img">
-            <img src="images/header-img-min.png" height="240px" width="240px">
+            <img src="images/header-img.png" height="240px" width="240px">
         </div>
     </section>
 
@@ -77,36 +72,18 @@
         </div>
       </div>
         <div id="cards">
+            <% for(i of products){ %>
             <div class="card">
-                <img src="images/apple-min.png">
+                <img src="<%= i.image %>">
                 <div class="card-body">
-                <div class="name">Example Name</div>
-                <div class="description"><p>Lorem ipsumid est laborum.</p></div>
+                <div class="name"><%= i.name %></div>
+                <div class="description"><p><%= i.description %></p></div>
                 <div class="rating">5.0 <i class="fa-solid fa-star"></i></div>
-                <div class="price">Rs. 40 / KG</div>
-                <div class="add2cart">Add to Cart</div>
+                <div class="price">Rs. <%= i.price %> / KG</div>
+                <div onclick="addToCart('<%= i.name %>')" class="add2cart" id="cart-button">Add to Cart</div>
                 </div>
             </div>
-            <div class="card">
-                <img src="images/tomato2-min.png">
-                <div class="card-body">
-                <div class="name">Example Name</div>
-                <div class="description"><p>Lorem ipsumid est laborum.</p></div>
-                <div class="rating">5.0 <i class="fa-solid fa-star"></i></div>
-                <div class="price">Rs. 50 / KG</div>
-                <div class="add2cart">Add to Cart</div>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/broccoli-min.png">
-                <div class="card-body">
-                <div class="name">Example Name</div>
-                <div class="description"><p>Lorem ipsumid est laborum.</p></div>
-                <div class="rating">5.0 <i class="fa-solid fa-star"></i></div>
-                <div class="price">Rs. 50 / KG</div>
-                <div class="add2cart">Add to Cart</div>
-                </div>
-            </div>
+            <% } %>
         </div>
     </section>
 
@@ -146,8 +123,7 @@
     <%- include('include/footer') %>
 
   </main>
-
-    <script type="text/javascript" src="javascript/main.js"></script>
+     <script type="text/javascript" src="javascript/main.js"></script>
     <script type="text/javascript" src="javascript/navbar.js"></script>
 </body>
 </html>
