@@ -1,5 +1,5 @@
 const asyncHandler = require('express-async-handler');
-const Seller = require('../models/SellerModel');
+const Seller = require('../models/sellerModel');
 
 // Create a new seller
 const createSeller = asyncHandler(async (req, res) => {
@@ -15,7 +15,7 @@ const createSeller = asyncHandler(async (req, res) => {
 
   res.status(201).json(createdSeller);
 });
- const authseller = asyncHandler(async (req, res) => {  
+ const authseller = asyncHandler(async (req, res) => {
    const { email, password } = req.body;
    const seller = await Seller.findOne({ email });
    if (seller && (await seller.matchPassword(password))) {

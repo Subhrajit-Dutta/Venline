@@ -45,7 +45,7 @@ if(localStorage.getItem('user')){
                     <div class="profile-card-name"><h4>${user.username}</h4></div>
                     <div id="profile-card-email"><p>${user.email}</p></div>
                     <div>
-                        <button type="button" onclick="location.href='profile'">Profile Dashboard</button>
+                        <button type="button" onclick="location.href='profile-seller'">Profile Dashboard</button>
                         <button type="button" onclick="logOut()">Log Out</button>
                     </div>
 `;

@@ -19,6 +19,6 @@ form.addEventListener('submit',function(event){
         console.log(createdUser)
         localStorage.setItem('user', JSON.stringify(createdUser));
         // Redirect to home page
-        window.location.href = "http://localhost:3000";
+        window.location.href = "/";
     })
 })

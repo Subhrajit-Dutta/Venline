@@ -13,6 +13,7 @@ let navBoxes = document.getElementsByClassName('navboxes');
 let products = document.getElementById('products');
 let upload = document.getElementById('upload');
 let edit = document.getElementById('editProducts');
+let orders = document.getElementById('orders');
 let editbtn = document.getElementById('edit');
 
 
@@ -20,37 +21,53 @@ function productsShow() {
 	navBoxes[0].classList.add('navcolor');
 	navBoxes[1].classList.remove('navcolor');
 	navBoxes[2].classList.remove('navcolor');
+	navBoxes[3].classList.remove('navcolor');
     products.classList.add('show');
     upload.classList.remove('show');
     edit.classList.remove('show');
+    orders.classList.remove('show');
 }
 
 function uploadShow() {
 	navBoxes[1].classList.add('navcolor');
 	navBoxes[0].classList.remove('navcolor');
 	navBoxes[2].classList.remove('navcolor');
+	navBoxes[3].classList.remove('navcolor');
 	products.classList.remove('show');
     upload.classList.add('show');
     edit.classList.remove('show');
+    orders.classList.remove('show');
 }
 
 function editShow() {
 	navBoxes[2].classList.add('navcolor');
 	navBoxes[1].classList.remove('navcolor');
 	navBoxes[0].classList.remove('navcolor');
+	navBoxes[3].classList.remove('navcolor');
 	products.classList.remove('show');
     upload.classList.remove('show');
     edit.classList.add('show');
+    orders.classList.remove('show');
+}
+
+function orderShow() {
+	navBoxes[2].classList.remove('navcolor');
+	navBoxes[1].classList.remove('navcolor');
+	navBoxes[0].classList.remove('navcolor');
+	navBoxes[3].classList.add('navcolor');
+	products.classList.remove('show');
+    upload.classList.remove('show');
+    edit.classList.remove('show');
+    orders.classList.add('show');
 }
 
 navBoxes[0].addEventListener('click',productsShow);
 navBoxes[1].addEventListener('click',uploadShow);
 navBoxes[2].addEventListener('click',editShow);
+navBoxes[3].addEventListener('click',orderShow);
 editbtn.addEventListener('click',editShow);
 
 //userdata
-
-let user = JSON.parse(localStorage.getItem('user'));
 
 document.getElementById('name').innerHTML = `<h1>${user.username}</h1>`;
 
@@ -101,31 +118,3 @@ if(localStorage.getItem('city') != null){
     const cityName = localStorage.getItem('city');    
     city.innerHTML = `${cityName}`;
 }
-
-//upload product   
-const form= document.getElementById('upload-product')
-form.addEventListener('submit',function(event){
-    event.preventDefault()
-    const formData = new FormData(form)
-    const name = formData.get('name')
-    const description=formData.get('description')
-    const price = formData.get('price')
-    const image = formData.get('image')
-    const user = {
-        name,
-        description,
-        price,
-        image
-    }
-    fetch('/api/seller/upload', {
-        method: 'POST',
-        body: JSON.stringify(user),
-        headers: {
-            'content-type': 'application/json'
-        }
-    }).then(response => response.json())
-    .then(createdUser => {
-        console.log(createdUser)
-        window.location.href = "http://localhost:3000/profile-seller"
-    })
-})

@@ -1,5 +1,7 @@
 // count
 
+// const { json } = require("body-parser");
+// const axios= require('axios');
 const incre = document.getElementsByClassName('incre');
 const decre  = document.getElementsByClassName('decre');
 

@@ -1,6 +1,6 @@
 //userdata
 
-let user = JSON.parse(localStorage.getItem('user'));
+// let user = JSON.parse(localStorage.getItem('user'));
 
 document.getElementById('name').innerHTML = `<h1>${user.username}</h1>`;
 

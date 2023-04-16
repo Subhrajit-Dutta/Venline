@@ -2,6 +2,10 @@
 
 const pcard = document.getElementsByClassName('provide-card');
 const icons = document.getElementsByClassName('i');
+const cartbutton = document.getElementById('cart-button');
+// const axios= require('axios');10
+let products = []
+let cartItems = []
 
 function changecolor() {
     pcard[1].classList.add('cardcolor');
@@ -49,19 +53,70 @@ const city = document.getElementById('city');
 const successfulLookup = (position) => {
     const { latitude, longitude } = position.coords;
     fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=6fb98deaf8b54d719c0330a5a44a6ac3`)
-    .then(response => response.json())
-    .then(data => {
-        localStorage.setItem('city', (data.results[0].components.city));
-        const cityName = localStorage.getItem('city');    
-        city.innerHTML = `${cityName}`;
-    });
+        .then(response => response.json())
+        .then(data => {
+            localStorage.setItem('city', (data.results[0].components.city));
+            const cityName = localStorage.getItem('city');
+            city.innerHTML = `${cityName}`;
+        });
 }
 
-arrow_box.addEventListener('click',function(){  
+arrow_box.addEventListener('click', function () {
     navigator.geolocation.getCurrentPosition(successfulLookup, console.log);
 });
 
-if(localStorage.getItem('city') != null){
-    const cityName = localStorage.getItem('city');    
+if (localStorage.getItem('city') != null) {
+    const cityName = localStorage.getItem('city');
     city.innerHTML = `${cityName}`;
+}
+
+let cart = document.getElementById('cart');
+//CART FUNCTIONS
+function getcart(name, price, url, con, btncart) {
+    const item = {
+        name: name,
+        price: price,
+        url: url,
+    }
+    cartItems.push(item);
+    let storage = JSON.parse(localStorage.getItem("cart"))
+    if (storage == null) {
+        products.push(item)
+        localStorage.setItem("cart", JSON.stringify(products))
+    }
+    else {
+        products = JSON.parse(localStorage.getItem("cart"))
+
+    }
+}
+
+function addToCart(productName) {
+    const username = JSON.parse(localStorage.getItem('user')).username;
+    console.log("Test Cart")
+    // Get the data from the form or any other source
+    const data = {
+        username: username,
+        productName: productName,
+        quantity: 1,
+        price: 100
+    };
+
+    // Send the POST request using Axios
+    fetch('/api/consumer/cart', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data.message);
+            // Optionally update the UI to reflect the changes in the cart
+        })
+        .catch(error => {
+            console.error(error);
+            // Optionally display an error message to the user
+        });
+
 }

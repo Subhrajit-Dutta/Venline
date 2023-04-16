@@ -21,6 +21,6 @@ form.addEventListener('submit',function(event){
     }).then(response => response.json())
     .then(createdUser => {
         console.log(createdUser)
-        window.location.href = "http://localhost:3000/login.html"
+        window.location.href = "/login.html"
     })
 })
