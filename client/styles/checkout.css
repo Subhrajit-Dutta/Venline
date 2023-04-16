@@ -32,7 +32,8 @@ body
 {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	width: 400px;
+/*	width: 400px;*/
+	width: 40%;
 	height: auto;
 /*	border: 1px solid black;*/
 }
@@ -132,6 +133,7 @@ input:focus {
 	margin-top: 96px;
 	background-color: white;
 	width: 400px;
+/*	width: 40%;*/
 	height: auto;
 	border: 1.5px solid #E1E1E1;
 	border-radius: 4px;
@@ -193,10 +195,10 @@ input:focus {
 
 .seperation-line
 {
-	margin-top: 10px;
+	margin-top: 5px;
 	width: 98%;
 	border-top: 1.5px solid lightgrey;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 #total
@@ -234,9 +236,50 @@ input:focus {
 
 @media screen and (max-width: 909px)
 {
+	.price
+	{
+		margin-left: 33%;
+	}
+	#left
+	{
+		width: 350px;
+	}
     #parent
     {
-    	width: 100%;
+    	width: 95%;
+    }
+}
+
+@media screen and (max-width: 790px)
+{
+	.price
+	{
+		margin-left: 40%;
+	}
+
+
+@media screen and (max-width: 740px)
+{
+	.seperation-line
+	{
+		width: 99%;
+	}
+	.price
+	{
+		margin-left: 34%;
+	}
+
+	#right
+	{
+		width: 350px;
+	}
+    #parent
+    {
+    	width: 95%;
+    }
+    #total
+    {
+    	margin-left: 64%;
     }
 }
 

@@ -1,6 +1,7 @@
 /*body*/
 
 body{
+	padding-top: 20px;
 	margin: 0;
 	font-family: 'Lato', sans-serif;
 }
@@ -109,10 +110,9 @@ main{
 }
 
 .back-animation:nth-child(3){
-	top: 0;
-	right: 0;
+	top: 35rem;
 	border-radius: 30% 40% 88% 12%;
-/*	animation: move 2s alternate infinite;*/
+	animation: move 2s alternate infinite;
 	opacity: 0.4;
 	z-index: 97;
 }
@@ -169,6 +169,7 @@ section{
 	border: 1px solid black;
 	color: #696969;
 	cursor: pointer;
+	transition: 0.2s ease-in-out;
 }
 
 #header-text button:hover{
@@ -362,6 +363,7 @@ section{
 }
 
 #detect{
+	cursor: pointer;
 	display: flex;
 	flex-direction: row;
 	font-size: 1.1rem;
@@ -567,7 +569,6 @@ section{
 	border-radius: 1rem;
 	z-index: 99;
 	color: #696969;
-	position: relative;
 }
 
 .sm{

@@ -1,6 +1,7 @@
 body{
 	margin: 0;
 	font-family: 'Lato', sans-serif;
+	padding-top: 5rem;
 }
 
 ::-webkit-scrollbar {
@@ -31,8 +32,8 @@ body{
 #img{
 	width: 30%;
 	border-radius: 50%;
-	height: 8.5rem;
-	width: 8.5rem;
+	height: 7.5rem;
+	width: 7.5rem;
 	border: 3px solid white;
 }
 
@@ -49,6 +50,7 @@ body{
 #name{
 	display: inline-block;
 	margin: 0;
+	font-size: 0.85rem;
 }
 
 #location{
@@ -115,7 +117,7 @@ body{
 
 #navbox{
 	margin-top: 3rem;
-	height: 3rem;
+	height: 2.8rem;
 	width: 80%;
 	border: 1px solid #f5f5f5;
 	margin: auto;
@@ -125,7 +127,7 @@ body{
 }
 
 .navboxes{
-	font-size: 1.2rem;
+	font-size: 0.95rem;
 	text-align: center;
 	width: 10rem;
 	background-color: #f5f5f5;
@@ -138,6 +140,10 @@ body{
 	background-color: #39b364;
 	color: white;
 	box-shadow: 0px 0px 7px #9ecaed;
+}
+
+.head{
+	font-size: 1.65rem;
 }
 
 /*boxes*/
@@ -362,3 +368,50 @@ textarea{
 	font-size: 0.95rem;
 	height: 88px;
 }
+
+/*-----orders-----*/
+
+#orders
+{
+	flex-direction: column;
+}
+
+#table
+{
+	background-color: #39b364;
+	display: flex;
+	justify-content: space-around;
+}
+
+#table h3
+{
+	text-align: center;
+	width: 20%;
+	font-size: 20px;
+	color: white;
+	margin: 0;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.details
+{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.details h4
+{
+	text-align: center;
+	width: 20%;
+	font-size: 15px;
+	color: black;
+}
+
+
+
+
+
+
+

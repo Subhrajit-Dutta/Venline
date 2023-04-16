@@ -123,10 +123,11 @@ nav > div{
 
 .seperation-line
 {
-    margin-top: 10px;
-    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
     border-top: 1.5px solid grey;
-    width: 85%;
+    width: 83%;
 }
 
 .product
@@ -134,7 +135,6 @@ nav > div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 8px;
     transition: 0.3s ease-in-out;
     height: auto;
     width: 85%;
@@ -325,6 +325,7 @@ input:focus
 
 #coupon-submit
 {
+    cursor: pointer;
     border: 0;
     width: 35.9%;
     height: 39px;
